@@ -1,0 +1,3084 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local Reaper = Instance.new("ScreenGui")
+local Verify = Instance.new("Frame")
+local Bottom = Instance.new("Frame")
+local Top = Instance.new("Frame")
+local Logo = Instance.new("ImageLabel")
+local LoadingBack = Instance.new("Frame")
+local Loading = Instance.new("Frame")
+local Audio = Instance.new("Folder")
+local logoz = Instance.new("ImageLabel")
+local ESP = Instance.new("ImageLabel")
+local TextLabel = Instance.new("ImageLabel")
+local Template = Instance.new("TextLabel")
+local Minimize = Instance.new("TextButton")
+local OptionHolder = Instance.new("Frame")
+local Aleio = Instance.new("TextLabel")
+local TextButton = Instance.new("ImageButton")
+local TextLabel_2 = Instance.new("TextLabel")
+local Stone = Instance.new("TextLabel")
+local TextButton_2 = Instance.new("ImageButton")
+local TextLabel_3 = Instance.new("TextLabel")
+local Metal = Instance.new("TextLabel")
+local TextButton_3 = Instance.new("ImageButton")
+local TextLabel_4 = Instance.new("TextLabel")
+local Sulfur = Instance.new("TextLabel")
+local TextButton_4 = Instance.new("ImageButton")
+local TextLabel_5 = Instance.new("TextLabel")
+local Cloth = Instance.new("TextLabel")
+local TextButton_5 = Instance.new("ImageButton")
+local TextLabel_6 = Instance.new("TextLabel")
+local Mushroom = Instance.new("TextLabel")
+local TextButton_6 = Instance.new("ImageButton")
+local TextLabel_7 = Instance.new("TextLabel")
+local Settings = Instance.new("ImageLabel")
+local TextLabel_8 = Instance.new("ImageLabel")
+local Template_2 = Instance.new("TextLabel")
+local Minimize_2 = Instance.new("TextButton")
+local OptionHolder_2 = Instance.new("Frame")
+local SelfDestruct = Instance.new("TextLabel")
+local TextButton_7 = Instance.new("ImageButton")
+local TextLabel_9 = Instance.new("TextLabel")
+local Scale = Instance.new("TextLabel")
+local Add = Instance.new("ImageButton")
+local TextLabel_10 = Instance.new("TextLabel")
+local Minus = Instance.new("ImageButton")
+local TextLabel_11 = Instance.new("TextLabel")
+local HideName = Instance.new("TextLabel")
+local TextButton_8 = Instance.new("ImageButton")
+local TextLabel_12 = Instance.new("TextLabel")
+local PVP = Instance.new("ImageLabel")
+local TextLabel_13 = Instance.new("ImageLabel")
+local Template_3 = Instance.new("TextLabel")
+local Minimize_3 = Instance.new("TextButton")
+local OptionHolder_3 = Instance.new("Frame")
+local XRay = Instance.new("TextLabel")
+local TextButton_9 = Instance.new("ImageButton")
+local TextLabel_14 = Instance.new("TextLabel")
+local NameESP = Instance.new("TextLabel")
+local TextButton_10 = Instance.new("ImageButton")
+local TextLabel_15 = Instance.new("TextLabel")
+local KillAura = Instance.new("TextLabel")
+local TextButton_11 = Instance.new("ImageButton")
+local TextLabel_16 = Instance.new("TextLabel")
+local Farm = Instance.new("TextLabel")
+local TextButton_12 = Instance.new("ImageButton")
+local TextLabel_17 = Instance.new("TextLabel")
+local FullBright = Instance.new("TextLabel")
+local TextButton_13 = Instance.new("ImageButton")
+local TextLabel_18 = Instance.new("TextLabel")
+local SilentAim = Instance.new("TextLabel")
+local TextButton_14 = Instance.new("ImageButton")
+local TextLabel_19 = Instance.new("TextLabel")
+local ESP2 = Instance.new("ImageLabel")
+local TextLabel_20 = Instance.new("ImageLabel")
+local Template_4 = Instance.new("TextLabel")
+local Minimize_4 = Instance.new("TextButton")
+local OptionHolder_4 = Instance.new("Frame")
+local C4 = Instance.new("TextLabel")
+local TextButton_15 = Instance.new("ImageButton")
+local TextLabel_21 = Instance.new("TextLabel")
+local Plastic = Instance.new("TextLabel")
+local TextButton_16 = Instance.new("ImageButton")
+local TextLabel_22 = Instance.new("TextLabel")
+local Storages = Instance.new("TextLabel")
+local TextButton_17 = Instance.new("ImageButton")
+local TextLabel_23 = Instance.new("TextLabel")
+local Armor = Instance.new("TextLabel")
+local TextButton_18 = Instance.new("ImageButton")
+local TextLabel_24 = Instance.new("TextLabel")
+local Riles = Instance.new("TextLabel")
+local TextButton_19 = Instance.new("ImageButton")
+local TextLabel_25 = Instance.new("TextLabel")
+local Dynamite = Instance.new("TextLabel")
+local TextButton_20 = Instance.new("ImageButton")
+local TextLabel_26 = Instance.new("TextLabel")
+local Staff = Instance.new("TextLabel")
+local online = Instance.new("UIGradient")
+
+--Properties:
+
+Reaper.Name = "[Reaper]"
+Reaper.Parent = game.CoreGui
+Reaper.ResetOnSpawn = false
+
+Verify.Name = "Verify"
+Verify.Parent = Reaper
+Verify.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Verify.BackgroundTransparency = 1.000
+Verify.Position = UDim2.new(0.339825749, 0, 0.308225065, 0)
+Verify.Size = UDim2.new(0.319379598, 0, 0.382192612, 0)
+
+Bottom.Name = "Bottom"
+Bottom.Parent = Verify
+Bottom.BackgroundColor3 = Color3.fromRGB(47, 47, 47)
+Bottom.BackgroundTransparency = 1.000
+Bottom.BorderSizePixel = 0
+Bottom.Position = UDim2.new(-6.78732758e-05, 0, 0.690402627, 0)
+Bottom.Size = UDim2.new(0.998142302, 0, 0.309597552, 0)
+
+Top.Name = "Top"
+Top.Parent = Verify
+Top.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Top.BackgroundTransparency = 1.000
+Top.BorderSizePixel = 0
+Top.Position = UDim2.new(-6.78732758e-05, 0, -0.0185758062, 0)
+Top.Size = UDim2.new(0.998142302, 0, 0.708978415, 0)
+
+Logo.Name = "Logo"
+Logo.Parent = Verify
+Logo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Logo.BackgroundTransparency = 1.000
+Logo.BorderSizePixel = 0
+Logo.Position = UDim2.new(-0.036565952, 0, -0.0928792208, 0)
+Logo.Size = UDim2.new(0.104733542, 0, 0.198142424, 0)
+Logo.Image = "http://www.roblox.com/asset/?id=988322590"
+Logo.ImageTransparency = 1.000
+
+LoadingBack.Name = "LoadingBack"
+LoadingBack.Parent = Verify
+LoadingBack.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
+LoadingBack.BackgroundTransparency = 1.000
+LoadingBack.BorderSizePixel = 0
+LoadingBack.Position = UDim2.new(-6.78732758e-05, 0, 0.349845231, 0)
+LoadingBack.Size = UDim2.new(0.998142302, 0, 0.170278639, 0)
+
+Loading.Name = "Loading"
+Loading.Parent = Verify
+Loading.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Loading.BackgroundTransparency = 1.000
+Loading.BorderSizePixel = 0
+Loading.Position = UDim2.new(-6.78732758e-05, 0, 0.349845231, 0)
+Loading.Size = UDim2.new(0, 0, 0.170278639, 0)
+
+Audio.Name = "Audio"
+Audio.Parent = Reaper
+
+logoz.Name = "logoz"
+logoz.Parent = Reaper
+logoz.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+logoz.BackgroundTransparency = 1.000
+logoz.Position = UDim2.new(0.342999995, 0, 1, 0)
+logoz.Size = UDim2.new(0.313479632, 0, 0.551597059, 0)
+logoz.Image = "rbxassetid://988322590"
+
+ESP.Name = "ESP"
+ESP.Parent = Reaper
+ESP.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+ESP.BackgroundTransparency = 1.000
+ESP.BorderColor3 = Color3.fromRGB(255, 255, 255)
+ESP.BorderSizePixel = 2
+ESP.Position = UDim2.new(0.0611150935, 0, 0.118095718, 0)
+ESP.Size = UDim2.new(0, 136, 0, 205)
+ESP.Visible = false
+ESP.Image = "rbxassetid://2790390993"
+ESP.ImageColor3 = Color3.fromRGB(35, 35, 35)
+ESP.ScaleType = Enum.ScaleType.Slice
+ESP.SliceCenter = Rect.new(16, 16, 240, 240)
+
+TextLabel.Name = "TextLabel"
+TextLabel.Parent = ESP
+TextLabel.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Size = UDim2.new(0, 137, 0, 32)
+TextLabel.ZIndex = 2
+TextLabel.Image = "rbxassetid://2790371148"
+TextLabel.ImageColor3 = Color3.fromRGB(170, 255, 127)
+TextLabel.ScaleType = Enum.ScaleType.Slice
+TextLabel.SliceCenter = Rect.new(32, 32, 224, 224)
+
+Template.Name = "Template"
+Template.Parent = TextLabel
+Template.AnchorPoint = Vector2.new(0.5, 0.5)
+Template.BackgroundTransparency = 1.000
+Template.Position = UDim2.new(0.441605836, 0, 0.495535851, 0)
+Template.Size = UDim2.new(0.62043798, 0, 0.899999976, 0)
+Template.ZIndex = 2
+Template.Font = Enum.Font.Highway
+Template.Text = "Resource ESP"
+Template.TextColor3 = Color3.fromRGB(0, 0, 0)
+Template.TextSize = 18.000
+
+Minimize.Name = "Minimize"
+Minimize.Parent = TextLabel
+Minimize.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Minimize.BackgroundTransparency = 1.000
+Minimize.Position = UDim2.new(0.751824796, 0, 0.0455360413, 0)
+Minimize.Size = UDim2.new(0, 24, 0, 28)
+Minimize.ZIndex = 2
+Minimize.Font = Enum.Font.SciFi
+Minimize.Text = "-"
+Minimize.TextColor3 = Color3.fromRGB(255, 255, 255)
+Minimize.TextScaled = true
+Minimize.TextSize = 14.000
+Minimize.TextWrapped = true
+
+OptionHolder.Name = "OptionHolder"
+OptionHolder.Parent = ESP
+OptionHolder.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+OptionHolder.BackgroundTransparency = 1.000
+OptionHolder.Size = UDim2.new(0, 137, 0, 360)
+
+Aleio.Name = "Aleio"
+Aleio.Parent = OptionHolder
+Aleio.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Aleio.BackgroundTransparency = 1.000
+Aleio.Position = UDim2.new(0.131386861, 0, 0.0985915661, 0)
+Aleio.Size = UDim2.new(0, 100, 0, 27)
+Aleio.Font = Enum.Font.SourceSansLight
+Aleio.Text = "Aleio"
+Aleio.TextColor3 = Color3.fromRGB(255, 255, 255)
+Aleio.TextSize = 15.000
+Aleio.TextWrapped = true
+Aleio.TextXAlignment = Enum.TextXAlignment.Left
+
+TextButton.Name = "TextButton"
+TextButton.Parent = Aleio
+TextButton.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+TextButton.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.Position = UDim2.new(0.689999998, 0, 0.111111112, 0)
+TextButton.Size = UDim2.new(0, 31, 0, 21)
+TextButton.ImageColor3 = Color3.fromRGB(26, 26, 26)
+TextButton.ScaleType = Enum.ScaleType.Slice
+TextButton.SliceCenter = Rect.new(32, 32, 224, 224)
+
+TextLabel_2.Parent = TextButton
+TextLabel_2.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0.5, 0, 0.5, 0)
+TextLabel_2.Size = UDim2.new(1, 0, 0.899999976, 0)
+TextLabel_2.Font = Enum.Font.SciFi
+TextLabel_2.Text = ""
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 0, 0)
+TextLabel_2.TextSize = 16.000
+
+Stone.Name = "Stone"
+Stone.Parent = OptionHolder
+Stone.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Stone.BackgroundTransparency = 1.000
+Stone.Position = UDim2.new(0.131386861, 0, 0.478873253, 0)
+Stone.Size = UDim2.new(0, 100, 0, 27)
+Stone.Font = Enum.Font.SourceSansLight
+Stone.Text = "Stone "
+Stone.TextColor3 = Color3.fromRGB(255, 255, 255)
+Stone.TextSize = 15.000
+Stone.TextWrapped = true
+Stone.TextXAlignment = Enum.TextXAlignment.Left
+
+TextButton_2.Name = "TextButton"
+TextButton_2.Parent = Stone
+TextButton_2.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+TextButton_2.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_2.Position = UDim2.new(0.689999998, 0, 0.111111112, 0)
+TextButton_2.Size = UDim2.new(0, 31, 0, 21)
+TextButton_2.ImageColor3 = Color3.fromRGB(26, 26, 26)
+TextButton_2.ScaleType = Enum.ScaleType.Slice
+TextButton_2.SliceCenter = Rect.new(32, 32, 224, 224)
+
+TextLabel_3.Parent = TextButton_2
+TextLabel_3.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.BorderSizePixel = 0
+TextLabel_3.Position = UDim2.new(0.5, 0, 0.5, 0)
+TextLabel_3.Size = UDim2.new(1, 0, 0.899999976, 0)
+TextLabel_3.Font = Enum.Font.SciFi
+TextLabel_3.Text = ""
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 0, 0)
+TextLabel_3.TextSize = 16.000
+
+Metal.Name = "Metal"
+Metal.Parent = OptionHolder
+Metal.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Metal.BackgroundTransparency = 1.000
+Metal.Position = UDim2.new(0.131386861, 0, 0.402816921, 0)
+Metal.Size = UDim2.new(0, 100, 0, 27)
+Metal.Font = Enum.Font.SourceSansLight
+Metal.Text = "Metal"
+Metal.TextColor3 = Color3.fromRGB(255, 255, 255)
+Metal.TextSize = 15.000
+Metal.TextWrapped = true
+Metal.TextXAlignment = Enum.TextXAlignment.Left
+
+TextButton_3.Name = "TextButton"
+TextButton_3.Parent = Metal
+TextButton_3.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+TextButton_3.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_3.Position = UDim2.new(0.689999998, 0, 0.111111112, 0)
+TextButton_3.Size = UDim2.new(0, 31, 0, 21)
+TextButton_3.ImageColor3 = Color3.fromRGB(26, 26, 26)
+TextButton_3.ScaleType = Enum.ScaleType.Slice
+TextButton_3.SliceCenter = Rect.new(32, 32, 224, 224)
+
+TextLabel_4.Parent = TextButton_3
+TextLabel_4.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.BorderSizePixel = 0
+TextLabel_4.Position = UDim2.new(0.5, 0, 0.5, 0)
+TextLabel_4.Size = UDim2.new(1, 0, 0.899999976, 0)
+TextLabel_4.Font = Enum.Font.SciFi
+TextLabel_4.Text = ""
+TextLabel_4.TextColor3 = Color3.fromRGB(255, 0, 0)
+TextLabel_4.TextSize = 16.000
+
+Sulfur.Name = "Sulfur"
+Sulfur.Parent = OptionHolder
+Sulfur.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Sulfur.BackgroundTransparency = 1.000
+Sulfur.Position = UDim2.new(0.131386861, 0, 0.32676059, 0)
+Sulfur.Size = UDim2.new(0, 100, 0, 27)
+Sulfur.Font = Enum.Font.SourceSansLight
+Sulfur.Text = "Sulfur"
+Sulfur.TextColor3 = Color3.fromRGB(255, 255, 255)
+Sulfur.TextSize = 15.000
+Sulfur.TextWrapped = true
+Sulfur.TextXAlignment = Enum.TextXAlignment.Left
+
+TextButton_4.Name = "TextButton"
+TextButton_4.Parent = Sulfur
+TextButton_4.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+TextButton_4.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_4.Position = UDim2.new(0.689999998, 0, 0.111111112, 0)
+TextButton_4.Size = UDim2.new(0, 31, 0, 21)
+TextButton_4.ImageColor3 = Color3.fromRGB(26, 26, 26)
+TextButton_4.ScaleType = Enum.ScaleType.Slice
+TextButton_4.SliceCenter = Rect.new(32, 32, 224, 224)
+
+TextLabel_5.Parent = TextButton_4
+TextLabel_5.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_5.BackgroundTransparency = 1.000
+TextLabel_5.BorderSizePixel = 0
+TextLabel_5.Position = UDim2.new(0.5, 0, 0.5, 0)
+TextLabel_5.Size = UDim2.new(1, 0, 0.899999976, 0)
+TextLabel_5.Font = Enum.Font.SciFi
+TextLabel_5.Text = ""
+TextLabel_5.TextColor3 = Color3.fromRGB(255, 0, 0)
+TextLabel_5.TextSize = 16.000
+
+Cloth.Name = "Cloth"
+Cloth.Parent = OptionHolder
+Cloth.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Cloth.BackgroundTransparency = 1.000
+Cloth.Position = UDim2.new(0.131386861, 0, 0.250704229, 0)
+Cloth.Size = UDim2.new(0, 100, 0, 27)
+Cloth.Font = Enum.Font.SourceSansLight
+Cloth.Text = "Cloth"
+Cloth.TextColor3 = Color3.fromRGB(255, 255, 255)
+Cloth.TextSize = 15.000
+Cloth.TextWrapped = true
+Cloth.TextXAlignment = Enum.TextXAlignment.Left
+
+TextButton_5.Name = "TextButton"
+TextButton_5.Parent = Cloth
+TextButton_5.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+TextButton_5.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_5.Position = UDim2.new(0.689999998, 0, 0.111111112, 0)
+TextButton_5.Size = UDim2.new(0, 31, 0, 21)
+TextButton_5.ImageColor3 = Color3.fromRGB(26, 26, 26)
+TextButton_5.ScaleType = Enum.ScaleType.Slice
+TextButton_5.SliceCenter = Rect.new(32, 32, 224, 224)
+
+TextLabel_6.Parent = TextButton_5
+TextLabel_6.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_6.BackgroundTransparency = 1.000
+TextLabel_6.BorderSizePixel = 0
+TextLabel_6.Position = UDim2.new(0.5, 0, 0.5, 0)
+TextLabel_6.Size = UDim2.new(1, 0, 0.899999976, 0)
+TextLabel_6.Font = Enum.Font.SciFi
+TextLabel_6.Text = ""
+TextLabel_6.TextColor3 = Color3.fromRGB(255, 0, 0)
+TextLabel_6.TextSize = 16.000
+
+Mushroom.Name = "Mushroom"
+Mushroom.Parent = OptionHolder
+Mushroom.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Mushroom.BackgroundTransparency = 1.000
+Mushroom.Position = UDim2.new(0.131386861, 0, 0.174647897, 0)
+Mushroom.Size = UDim2.new(0, 100, 0, 27)
+Mushroom.Font = Enum.Font.SourceSansLight
+Mushroom.Text = "Mush"
+Mushroom.TextColor3 = Color3.fromRGB(255, 255, 255)
+Mushroom.TextSize = 15.000
+Mushroom.TextWrapped = true
+Mushroom.TextXAlignment = Enum.TextXAlignment.Left
+
+TextButton_6.Name = "TextButton"
+TextButton_6.Parent = Mushroom
+TextButton_6.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+TextButton_6.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_6.Position = UDim2.new(0.689999998, 0, 0.111111112, 0)
+TextButton_6.Size = UDim2.new(0, 31, 0, 21)
+TextButton_6.ImageColor3 = Color3.fromRGB(26, 26, 26)
+TextButton_6.ScaleType = Enum.ScaleType.Slice
+TextButton_6.SliceCenter = Rect.new(32, 32, 224, 224)
+
+TextLabel_7.Parent = TextButton_6
+TextLabel_7.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_7.BackgroundTransparency = 1.000
+TextLabel_7.BorderSizePixel = 0
+TextLabel_7.Position = UDim2.new(0.5, 0, 0.5, 0)
+TextLabel_7.Size = UDim2.new(1, 0, 0.899999976, 0)
+TextLabel_7.Font = Enum.Font.SciFi
+TextLabel_7.Text = ""
+TextLabel_7.TextColor3 = Color3.fromRGB(255, 0, 0)
+TextLabel_7.TextSize = 16.000
+
+Settings.Name = "Settings"
+Settings.Parent = Reaper
+Settings.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+Settings.BackgroundTransparency = 1.000
+Settings.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Settings.BorderSizePixel = 2
+Settings.Position = UDim2.new(0.324492216, 0, 0.118095718, 0)
+Settings.Size = UDim2.new(0, 137, 0, 205)
+Settings.Visible = false
+Settings.Image = "rbxassetid://2790390993"
+Settings.ImageColor3 = Color3.fromRGB(35, 35, 35)
+Settings.ScaleType = Enum.ScaleType.Slice
+Settings.SliceCenter = Rect.new(16, 16, 240, 240)
+
+TextLabel_8.Name = "TextLabel"
+TextLabel_8.Parent = Settings
+TextLabel_8.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_8.BackgroundTransparency = 1.000
+TextLabel_8.Size = UDim2.new(0, 137, 0, 32)
+TextLabel_8.ZIndex = 2
+TextLabel_8.Image = "rbxassetid://2790371148"
+TextLabel_8.ScaleType = Enum.ScaleType.Slice
+TextLabel_8.SliceCenter = Rect.new(32, 32, 224, 224)
+
+Template_2.Name = "Template"
+Template_2.Parent = TextLabel_8
+Template_2.AnchorPoint = Vector2.new(0.5, 0.5)
+Template_2.BackgroundTransparency = 1.000
+Template_2.Position = UDim2.new(0.441605836, 0, 0.495535851, 0)
+Template_2.Size = UDim2.new(0.62043798, 0, 0.899999976, 0)
+Template_2.ZIndex = 2
+Template_2.Font = Enum.Font.Highway
+Template_2.Text = "Settings"
+Template_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Template_2.TextSize = 18.000
+
+Minimize_2.Name = "Minimize"
+Minimize_2.Parent = TextLabel_8
+Minimize_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Minimize_2.BackgroundTransparency = 1.000
+Minimize_2.Position = UDim2.new(0.751824796, 0, 0.0455360413, 0)
+Minimize_2.Size = UDim2.new(0, 24, 0, 28)
+Minimize_2.ZIndex = 2
+Minimize_2.Font = Enum.Font.SciFi
+Minimize_2.Text = "-"
+Minimize_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Minimize_2.TextScaled = true
+Minimize_2.TextSize = 14.000
+Minimize_2.TextWrapped = true
+
+OptionHolder_2.Name = "OptionHolder"
+OptionHolder_2.Parent = Settings
+OptionHolder_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+OptionHolder_2.BackgroundTransparency = 1.000
+OptionHolder_2.Size = UDim2.new(0, 137, 0, 360)
+
+SelfDestruct.Name = "Self Destruct"
+SelfDestruct.Parent = OptionHolder_2
+SelfDestruct.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SelfDestruct.BackgroundTransparency = 1.000
+SelfDestruct.Position = UDim2.new(0.0218978096, 0, 0.120813794, 0)
+SelfDestruct.Size = UDim2.new(0, 81, 0, 27)
+SelfDestruct.Font = Enum.Font.SourceSansLight
+SelfDestruct.Text = "Self Destruct"
+SelfDestruct.TextColor3 = Color3.fromRGB(255, 255, 255)
+SelfDestruct.TextSize = 15.000
+SelfDestruct.TextWrapped = true
+
+TextButton_7.Name = "TextButton"
+TextButton_7.Parent = SelfDestruct
+TextButton_7.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+TextButton_7.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_7.Position = UDim2.new(1.00261891, 0, 0.111111112, 0)
+TextButton_7.Size = UDim2.new(0, 52, 0, 21)
+TextButton_7.ImageColor3 = Color3.fromRGB(26, 26, 26)
+TextButton_7.ScaleType = Enum.ScaleType.Slice
+TextButton_7.SliceCenter = Rect.new(32, 32, 224, 224)
+
+TextLabel_9.Parent = TextButton_7
+TextLabel_9.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_9.BackgroundTransparency = 1.000
+TextLabel_9.BorderSizePixel = 0
+TextLabel_9.Position = UDim2.new(0.507575989, 0, 0.5, 0)
+TextLabel_9.Size = UDim2.new(1.0151515, 0, 0.899999976, 0)
+TextLabel_9.Font = Enum.Font.SciFi
+TextLabel_9.Text = "Off"
+TextLabel_9.TextColor3 = Color3.fromRGB(255, 0, 0)
+TextLabel_9.TextSize = 16.000
+
+Scale.Name = "Scale"
+Scale.Parent = OptionHolder_2
+Scale.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Scale.BackgroundTransparency = 1.000
+Scale.Position = UDim2.new(0, 0, 0.282981247, 0)
+Scale.Size = UDim2.new(0, 136, 0, 27)
+Scale.Font = Enum.Font.SourceSansLight
+Scale.Text = "Kill Aura Delay (1)"
+Scale.TextColor3 = Color3.fromRGB(255, 255, 255)
+Scale.TextSize = 15.000
+Scale.TextWrapped = true
+
+Add.Name = "Add"
+Add.Parent = Scale
+Add.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+Add.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Add.Position = UDim2.new(0.256815851, 0, 1.18518519, 0)
+Add.Size = UDim2.new(0, 65, 0, 21)
+Add.ImageColor3 = Color3.fromRGB(26, 26, 26)
+Add.ScaleType = Enum.ScaleType.Slice
+Add.SliceCenter = Rect.new(32, 32, 224, 224)
+
+TextLabel_10.Parent = Add
+TextLabel_10.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_10.BackgroundTransparency = 1.000
+TextLabel_10.BorderSizePixel = 0
+TextLabel_10.Position = UDim2.new(0.5, 0, 0.5, 0)
+TextLabel_10.Size = UDim2.new(1, 0, 0.899999976, 0)
+TextLabel_10.Font = Enum.Font.SciFi
+TextLabel_10.Text = "+ 0.1"
+TextLabel_10.TextColor3 = Color3.fromRGB(255, 0, 0)
+TextLabel_10.TextSize = 16.000
+
+Minus.Name = "Minus"
+Minus.Parent = Scale
+Minus.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+Minus.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Minus.Position = UDim2.new(0.256815851, 0, 2.44444442, 0)
+Minus.Size = UDim2.new(0, 65, 0, 21)
+Minus.ImageColor3 = Color3.fromRGB(26, 26, 26)
+Minus.ScaleType = Enum.ScaleType.Slice
+Minus.SliceCenter = Rect.new(32, 32, 224, 224)
+
+TextLabel_11.Parent = Minus
+TextLabel_11.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_11.BackgroundTransparency = 1.000
+TextLabel_11.BorderSizePixel = 0
+TextLabel_11.Position = UDim2.new(0.5, 0, 0.5, 0)
+TextLabel_11.Size = UDim2.new(1, 0, 0.899999976, 0)
+TextLabel_11.Font = Enum.Font.SciFi
+TextLabel_11.Text = "- 0.1"
+TextLabel_11.TextColor3 = Color3.fromRGB(255, 0, 0)
+TextLabel_11.TextSize = 16.000
+
+HideName.Name = "Hide Name"
+HideName.Parent = OptionHolder_2
+HideName.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+HideName.BackgroundTransparency = 1.000
+HideName.Position = UDim2.new(0.0218978096, 0, 0.195813805, 0)
+HideName.Size = UDim2.new(0, 81, 0, 27)
+HideName.Font = Enum.Font.SourceSansLight
+HideName.Text = "Hide Name"
+HideName.TextColor3 = Color3.fromRGB(255, 255, 255)
+HideName.TextSize = 15.000
+HideName.TextWrapped = true
+
+TextButton_8.Name = "TextButton"
+TextButton_8.Parent = HideName
+TextButton_8.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+TextButton_8.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_8.Position = UDim2.new(1.00261891, 0, 0.111111112, 0)
+TextButton_8.Size = UDim2.new(0, 52, 0, 21)
+TextButton_8.ImageColor3 = Color3.fromRGB(26, 26, 26)
+TextButton_8.ScaleType = Enum.ScaleType.Slice
+TextButton_8.SliceCenter = Rect.new(32, 32, 224, 224)
+
+TextLabel_12.Parent = TextButton_8
+TextLabel_12.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_12.BackgroundTransparency = 1.000
+TextLabel_12.BorderSizePixel = 0
+TextLabel_12.Position = UDim2.new(0.507575989, 0, 0.5, 0)
+TextLabel_12.Size = UDim2.new(1.0151515, 0, 0.899999976, 0)
+TextLabel_12.Font = Enum.Font.SciFi
+TextLabel_12.Text = "Off"
+TextLabel_12.TextColor3 = Color3.fromRGB(255, 0, 0)
+TextLabel_12.TextSize = 16.000
+
+PVP.Name = "PVP"
+PVP.Parent = Reaper
+PVP.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+PVP.BackgroundTransparency = 1.000
+PVP.BorderColor3 = Color3.fromRGB(255, 255, 255)
+PVP.BorderSizePixel = 2
+PVP.Position = UDim2.new(0.197740614, 0, 0.118095718, 0)
+PVP.Size = UDim2.new(0, 136, 0, 205)
+PVP.Visible = false
+PVP.Image = "rbxassetid://2790390993"
+PVP.ImageColor3 = Color3.fromRGB(35, 35, 35)
+PVP.ScaleType = Enum.ScaleType.Slice
+PVP.SliceCenter = Rect.new(16, 16, 240, 240)
+
+TextLabel_13.Name = "TextLabel"
+TextLabel_13.Parent = PVP
+TextLabel_13.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_13.BackgroundTransparency = 1.000
+TextLabel_13.Size = UDim2.new(0, 137, 0, 32)
+TextLabel_13.ZIndex = 2
+TextLabel_13.Image = "rbxassetid://2790371148"
+TextLabel_13.ImageColor3 = Color3.fromRGB(255, 52, 52)
+TextLabel_13.ScaleType = Enum.ScaleType.Slice
+TextLabel_13.SliceCenter = Rect.new(32, 32, 224, 224)
+
+Template_3.Name = "Template"
+Template_3.Parent = TextLabel_13
+Template_3.AnchorPoint = Vector2.new(0.5, 0.5)
+Template_3.BackgroundTransparency = 1.000
+Template_3.Position = UDim2.new(0.441605836, 0, 0.495535851, 0)
+Template_3.Size = UDim2.new(0.62043798, 0, 0.899999976, 0)
+Template_3.ZIndex = 2
+Template_3.Font = Enum.Font.Highway
+Template_3.Text = "PvP / Misc"
+Template_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+Template_3.TextSize = 18.000
+
+Minimize_3.Name = "Minimize"
+Minimize_3.Parent = TextLabel_13
+Minimize_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Minimize_3.BackgroundTransparency = 1.000
+Minimize_3.Position = UDim2.new(0.751824796, 0, 0.0455360413, 0)
+Minimize_3.Size = UDim2.new(0, 24, 0, 28)
+Minimize_3.ZIndex = 2
+Minimize_3.Font = Enum.Font.SciFi
+Minimize_3.Text = "-"
+Minimize_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+Minimize_3.TextScaled = true
+Minimize_3.TextSize = 14.000
+Minimize_3.TextWrapped = true
+
+OptionHolder_3.Name = "OptionHolder"
+OptionHolder_3.Parent = PVP
+OptionHolder_3.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+OptionHolder_3.BackgroundTransparency = 1.000
+OptionHolder_3.Size = UDim2.new(0, 137, 0, 360)
+
+XRay.Name = "X-Ray"
+XRay.Parent = OptionHolder_3
+XRay.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+XRay.BackgroundTransparency = 1.000
+XRay.Position = UDim2.new(0.131386861, 0, 0.0985915661, 0)
+XRay.Size = UDim2.new(0, 100, 0, 27)
+XRay.Font = Enum.Font.SourceSansLight
+XRay.Text = "X-Ray"
+XRay.TextColor3 = Color3.fromRGB(255, 255, 255)
+XRay.TextSize = 15.000
+XRay.TextWrapped = true
+XRay.TextXAlignment = Enum.TextXAlignment.Left
+
+TextButton_9.Name = "TextButton"
+TextButton_9.Parent = XRay
+TextButton_9.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+TextButton_9.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_9.Position = UDim2.new(0.700000048, 0, 0.111111112, 0)
+TextButton_9.Size = UDim2.new(0, 30, 0, 21)
+TextButton_9.ImageColor3 = Color3.fromRGB(26, 26, 26)
+TextButton_9.ScaleType = Enum.ScaleType.Slice
+TextButton_9.SliceCenter = Rect.new(32, 32, 224, 224)
+
+TextLabel_14.Parent = TextButton_9
+TextLabel_14.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_14.BackgroundTransparency = 1.000
+TextLabel_14.BorderSizePixel = 0
+TextLabel_14.Position = UDim2.new(0.5, 0, 0.5, 0)
+TextLabel_14.Size = UDim2.new(1, 0, 0.899999976, 0)
+TextLabel_14.Font = Enum.Font.SciFi
+TextLabel_14.Text = ""
+TextLabel_14.TextColor3 = Color3.fromRGB(255, 0, 0)
+TextLabel_14.TextSize = 16.000
+
+NameESP.Name = "Name ESP"
+NameESP.Parent = OptionHolder_3
+NameESP.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+NameESP.BackgroundTransparency = 1.000
+NameESP.Position = UDim2.new(0.131386861, 0, 0.478873253, 0)
+NameESP.Size = UDim2.new(0, 100, 0, 27)
+NameESP.Font = Enum.Font.SourceSansLight
+NameESP.Text = "ESP"
+NameESP.TextColor3 = Color3.fromRGB(255, 255, 255)
+NameESP.TextSize = 15.000
+NameESP.TextWrapped = true
+NameESP.TextXAlignment = Enum.TextXAlignment.Left
+
+TextButton_10.Name = "TextButton"
+TextButton_10.Parent = NameESP
+TextButton_10.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+TextButton_10.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_10.Position = UDim2.new(0.700000048, 0, 0.111111112, 0)
+TextButton_10.Size = UDim2.new(0, 30, 0, 21)
+TextButton_10.ImageColor3 = Color3.fromRGB(26, 26, 26)
+TextButton_10.ScaleType = Enum.ScaleType.Slice
+TextButton_10.SliceCenter = Rect.new(32, 32, 224, 224)
+
+TextLabel_15.Parent = TextButton_10
+TextLabel_15.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_15.BackgroundTransparency = 1.000
+TextLabel_15.BorderSizePixel = 0
+TextLabel_15.Position = UDim2.new(0.5, 0, 0.5, 0)
+TextLabel_15.Size = UDim2.new(1, 0, 0.899999976, 0)
+TextLabel_15.Font = Enum.Font.SciFi
+TextLabel_15.Text = ""
+TextLabel_15.TextColor3 = Color3.fromRGB(255, 0, 0)
+TextLabel_15.TextSize = 16.000
+
+KillAura.Name = "Kill Aura"
+KillAura.Parent = OptionHolder_3
+KillAura.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+KillAura.BackgroundTransparency = 1.000
+KillAura.Position = UDim2.new(0.131386861, 0, 0.402816921, 0)
+KillAura.Size = UDim2.new(0, 100, 0, 27)
+KillAura.Font = Enum.Font.SourceSansLight
+KillAura.Text = "KA [F]"
+KillAura.TextColor3 = Color3.fromRGB(255, 255, 255)
+KillAura.TextSize = 15.000
+KillAura.TextWrapped = true
+KillAura.TextXAlignment = Enum.TextXAlignment.Left
+
+TextButton_11.Name = "TextButton"
+TextButton_11.Parent = KillAura
+TextButton_11.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+TextButton_11.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_11.Position = UDim2.new(0.700000048, 0, 0.111111112, 0)
+TextButton_11.Size = UDim2.new(0, 30, 0, 21)
+TextButton_11.ImageColor3 = Color3.fromRGB(26, 26, 26)
+TextButton_11.ScaleType = Enum.ScaleType.Slice
+TextButton_11.SliceCenter = Rect.new(32, 32, 224, 224)
+
+TextLabel_16.Parent = TextButton_11
+TextLabel_16.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_16.BackgroundTransparency = 1.000
+TextLabel_16.BorderSizePixel = 0
+TextLabel_16.Position = UDim2.new(0.5, 0, 0.5, 0)
+TextLabel_16.Size = UDim2.new(1, 0, 0.899999976, 0)
+TextLabel_16.Font = Enum.Font.SciFi
+TextLabel_16.Text = ""
+TextLabel_16.TextColor3 = Color3.fromRGB(255, 0, 0)
+TextLabel_16.TextSize = 16.000
+
+Farm.Name = "Farm"
+Farm.Parent = OptionHolder_3
+Farm.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Farm.BackgroundTransparency = 1.000
+Farm.Position = UDim2.new(0.131386861, 0, 0.32676059, 0)
+Farm.Size = UDim2.new(0, 100, 0, 27)
+Farm.Font = Enum.Font.SourceSansLight
+Farm.Text = "F/Farm [T]"
+Farm.TextColor3 = Color3.fromRGB(255, 255, 255)
+Farm.TextSize = 15.000
+Farm.TextWrapped = true
+Farm.TextXAlignment = Enum.TextXAlignment.Left
+
+TextButton_12.Name = "TextButton"
+TextButton_12.Parent = Farm
+TextButton_12.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+TextButton_12.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_12.Position = UDim2.new(0.700000048, 0, 0.111111112, 0)
+TextButton_12.Size = UDim2.new(0, 30, 0, 21)
+TextButton_12.ImageColor3 = Color3.fromRGB(26, 26, 26)
+TextButton_12.ScaleType = Enum.ScaleType.Slice
+TextButton_12.SliceCenter = Rect.new(32, 32, 224, 224)
+
+TextLabel_17.Parent = TextButton_12
+TextLabel_17.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_17.BackgroundTransparency = 1.000
+TextLabel_17.BorderSizePixel = 0
+TextLabel_17.Position = UDim2.new(0.5, 0, 0.5, 0)
+TextLabel_17.Size = UDim2.new(1, 0, 0.899999976, 0)
+TextLabel_17.Font = Enum.Font.SciFi
+TextLabel_17.Text = ""
+TextLabel_17.TextColor3 = Color3.fromRGB(255, 0, 0)
+TextLabel_17.TextSize = 16.000
+
+FullBright.Name = "Full Bright"
+FullBright.Parent = OptionHolder_3
+FullBright.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FullBright.BackgroundTransparency = 1.000
+FullBright.Position = UDim2.new(0.131386861, 0, 0.250704229, 0)
+FullBright.Size = UDim2.new(0, 100, 0, 27)
+FullBright.Font = Enum.Font.SourceSansLight
+FullBright.Text = "Bright "
+FullBright.TextColor3 = Color3.fromRGB(255, 255, 255)
+FullBright.TextSize = 15.000
+FullBright.TextWrapped = true
+FullBright.TextXAlignment = Enum.TextXAlignment.Left
+
+TextButton_13.Name = "TextButton"
+TextButton_13.Parent = FullBright
+TextButton_13.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+TextButton_13.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_13.Position = UDim2.new(0.700000048, 0, 0.111111112, 0)
+TextButton_13.Size = UDim2.new(0, 30, 0, 21)
+TextButton_13.ImageColor3 = Color3.fromRGB(26, 26, 26)
+TextButton_13.ScaleType = Enum.ScaleType.Slice
+TextButton_13.SliceCenter = Rect.new(32, 32, 224, 224)
+
+TextLabel_18.Parent = TextButton_13
+TextLabel_18.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_18.BackgroundTransparency = 1.000
+TextLabel_18.BorderSizePixel = 0
+TextLabel_18.Position = UDim2.new(0.5, 0, 0.5, 0)
+TextLabel_18.Size = UDim2.new(1, 0, 0.899999976, 0)
+TextLabel_18.Font = Enum.Font.SciFi
+TextLabel_18.Text = ""
+TextLabel_18.TextColor3 = Color3.fromRGB(255, 0, 0)
+TextLabel_18.TextSize = 16.000
+
+SilentAim.Name = "Silent Aim"
+SilentAim.Parent = OptionHolder_3
+SilentAim.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SilentAim.BackgroundTransparency = 1.000
+SilentAim.Position = UDim2.new(0.131386861, 0, 0.174647897, 0)
+SilentAim.Size = UDim2.new(0, 100, 0, 27)
+SilentAim.Font = Enum.Font.SourceSansLight
+SilentAim.Text = "testing"
+SilentAim.TextColor3 = Color3.fromRGB(255, 255, 255)
+SilentAim.TextSize = 15.000
+SilentAim.TextWrapped = true
+SilentAim.TextXAlignment = Enum.TextXAlignment.Left
+
+TextButton_14.Name = "TextButton"
+TextButton_14.Parent = SilentAim
+TextButton_14.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+TextButton_14.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_14.Position = UDim2.new(0.700000048, 0, 0.111111112, 0)
+TextButton_14.Size = UDim2.new(0, 30, 0, 21)
+TextButton_14.ImageColor3 = Color3.fromRGB(26, 26, 26)
+TextButton_14.ScaleType = Enum.ScaleType.Slice
+TextButton_14.SliceCenter = Rect.new(32, 32, 224, 224)
+
+TextLabel_19.Parent = TextButton_14
+TextLabel_19.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_19.BackgroundTransparency = 1.000
+TextLabel_19.BorderSizePixel = 0
+TextLabel_19.Position = UDim2.new(0.5, 0, 0.5, 0)
+TextLabel_19.Size = UDim2.new(1, 0, 0.899999976, 0)
+TextLabel_19.Font = Enum.Font.SciFi
+TextLabel_19.Text = ""
+TextLabel_19.TextColor3 = Color3.fromRGB(255, 0, 0)
+TextLabel_19.TextSize = 16.000
+
+ESP2.Name = "ESP2"
+ESP2.Parent = Reaper
+ESP2.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+ESP2.BackgroundTransparency = 1.000
+ESP2.BorderColor3 = Color3.fromRGB(255, 255, 255)
+ESP2.BorderSizePixel = 2
+ESP2.Position = UDim2.new(0.452061594, 0, 0.119324222, 0)
+ESP2.Size = UDim2.new(0, 136, 0, 205)
+ESP2.Visible = false
+ESP2.Image = "rbxassetid://2790390993"
+ESP2.ImageColor3 = Color3.fromRGB(35, 35, 35)
+ESP2.ScaleType = Enum.ScaleType.Slice
+ESP2.SliceCenter = Rect.new(16, 16, 240, 240)
+
+TextLabel_20.Name = "TextLabel"
+TextLabel_20.Parent = ESP2
+TextLabel_20.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_20.BackgroundTransparency = 1.000
+TextLabel_20.Size = UDim2.new(0, 137, 0, 32)
+TextLabel_20.ZIndex = 2
+TextLabel_20.Image = "rbxassetid://2790371148"
+TextLabel_20.ImageColor3 = Color3.fromRGB(85, 0, 0)
+TextLabel_20.ScaleType = Enum.ScaleType.Slice
+TextLabel_20.SliceCenter = Rect.new(32, 32, 224, 224)
+
+Template_4.Name = "Template"
+Template_4.Parent = TextLabel_20
+Template_4.AnchorPoint = Vector2.new(0.5, 0.5)
+Template_4.BackgroundTransparency = 1.000
+Template_4.Position = UDim2.new(0.441605836, 0, 0.495535851, 0)
+Template_4.Size = UDim2.new(0.62043798, 0, 0.899999976, 0)
+Template_4.ZIndex = 2
+Template_4.Font = Enum.Font.Highway
+Template_4.Text = "Base Loot ESP"
+Template_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+Template_4.TextSize = 18.000
+
+Minimize_4.Name = "Minimize"
+Minimize_4.Parent = TextLabel_20
+Minimize_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Minimize_4.BackgroundTransparency = 1.000
+Minimize_4.Position = UDim2.new(0.751824796, 0, 0.0455360413, 0)
+Minimize_4.Size = UDim2.new(0, 24, 0, 28)
+Minimize_4.ZIndex = 2
+Minimize_4.Font = Enum.Font.SciFi
+Minimize_4.Text = "-"
+Minimize_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+Minimize_4.TextScaled = true
+Minimize_4.TextSize = 14.000
+Minimize_4.TextWrapped = true
+
+OptionHolder_4.Name = "OptionHolder"
+OptionHolder_4.Parent = ESP2
+OptionHolder_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+OptionHolder_4.BackgroundTransparency = 1.000
+OptionHolder_4.Size = UDim2.new(0, 137, 0, 360)
+
+C4.Name = "C4"
+C4.Parent = OptionHolder_4
+C4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+C4.BackgroundTransparency = 1.000
+C4.Position = UDim2.new(0.131386861, 0, 0.0985915661, 0)
+C4.Size = UDim2.new(0, 100, 0, 27)
+C4.Font = Enum.Font.SourceSansLight
+C4.Text = "C4"
+C4.TextColor3 = Color3.fromRGB(255, 255, 255)
+C4.TextSize = 15.000
+C4.TextWrapped = true
+C4.TextXAlignment = Enum.TextXAlignment.Left
+
+TextButton_15.Name = "TextButton"
+TextButton_15.Parent = C4
+TextButton_15.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+TextButton_15.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_15.Position = UDim2.new(0.699999988, 0, 0.111111112, 0)
+TextButton_15.Size = UDim2.new(0, 30, 0, 21)
+TextButton_15.ImageColor3 = Color3.fromRGB(26, 26, 26)
+TextButton_15.ScaleType = Enum.ScaleType.Slice
+TextButton_15.SliceCenter = Rect.new(32, 32, 224, 224)
+
+TextLabel_21.Parent = TextButton_15
+TextLabel_21.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_21.BackgroundTransparency = 1.000
+TextLabel_21.BorderSizePixel = 0
+TextLabel_21.Position = UDim2.new(0.5, 0, 0.5, 0)
+TextLabel_21.Size = UDim2.new(1, 0, 0.899999976, 0)
+TextLabel_21.Font = Enum.Font.SciFi
+TextLabel_21.Text = ""
+TextLabel_21.TextColor3 = Color3.fromRGB(255, 0, 0)
+TextLabel_21.TextSize = 16.000
+
+Plastic.Name = "Plastic"
+Plastic.Parent = OptionHolder_4
+Plastic.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Plastic.BackgroundTransparency = 1.000
+Plastic.Position = UDim2.new(0.131386861, 0, 0.478873253, 0)
+Plastic.Size = UDim2.new(0, 100, 0, 27)
+Plastic.Font = Enum.Font.SourceSansLight
+Plastic.Text = "Plastic "
+Plastic.TextColor3 = Color3.fromRGB(255, 255, 255)
+Plastic.TextSize = 15.000
+Plastic.TextWrapped = true
+Plastic.TextXAlignment = Enum.TextXAlignment.Left
+
+TextButton_16.Name = "TextButton"
+TextButton_16.Parent = Plastic
+TextButton_16.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+TextButton_16.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_16.Position = UDim2.new(0.699999988, 0, 0.111111112, 0)
+TextButton_16.Size = UDim2.new(0, 30, 0, 21)
+TextButton_16.ImageColor3 = Color3.fromRGB(26, 26, 26)
+TextButton_16.ScaleType = Enum.ScaleType.Slice
+TextButton_16.SliceCenter = Rect.new(32, 32, 224, 224)
+
+TextLabel_22.Parent = TextButton_16
+TextLabel_22.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_22.BackgroundTransparency = 1.000
+TextLabel_22.BorderSizePixel = 0
+TextLabel_22.Position = UDim2.new(0.5, 0, 0.5, 0)
+TextLabel_22.Size = UDim2.new(1, 0, 0.899999976, 0)
+TextLabel_22.Font = Enum.Font.SciFi
+TextLabel_22.Text = ""
+TextLabel_22.TextColor3 = Color3.fromRGB(255, 0, 0)
+TextLabel_22.TextSize = 16.000
+
+Storages.Name = "Storages"
+Storages.Parent = OptionHolder_4
+Storages.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Storages.BackgroundTransparency = 1.000
+Storages.Position = UDim2.new(0.131386861, 0, 0.402816921, 0)
+Storages.Size = UDim2.new(0, 100, 0, 27)
+Storages.Font = Enum.Font.SourceSansLight
+Storages.Text = "Storages"
+Storages.TextColor3 = Color3.fromRGB(255, 255, 255)
+Storages.TextSize = 20.000
+Storages.TextWrapped = true
+Storages.TextXAlignment = Enum.TextXAlignment.Left
+
+TextButton_17.Name = "TextButton"
+TextButton_17.Parent = Storages
+TextButton_17.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+TextButton_17.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_17.Position = UDim2.new(0.699999988, 0, 0.111111112, 0)
+TextButton_17.Size = UDim2.new(0, 30, 0, 21)
+TextButton_17.ImageColor3 = Color3.fromRGB(26, 26, 26)
+TextButton_17.ScaleType = Enum.ScaleType.Slice
+TextButton_17.SliceCenter = Rect.new(32, 32, 224, 224)
+
+TextLabel_23.Parent = TextButton_17
+TextLabel_23.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_23.BackgroundTransparency = 1.000
+TextLabel_23.BorderSizePixel = 0
+TextLabel_23.Position = UDim2.new(0.5, 0, 0.5, 0)
+TextLabel_23.Size = UDim2.new(1, 0, 0.899999976, 0)
+TextLabel_23.Font = Enum.Font.SciFi
+TextLabel_23.Text = ""
+TextLabel_23.TextColor3 = Color3.fromRGB(255, 0, 0)
+TextLabel_23.TextSize = 16.000
+
+Armor.Name = "Armor"
+Armor.Parent = OptionHolder_4
+Armor.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Armor.BackgroundTransparency = 1.000
+Armor.Position = UDim2.new(0.131386861, 0, 0.32676059, 0)
+Armor.Size = UDim2.new(0, 100, 0, 27)
+Armor.Font = Enum.Font.SourceSansLight
+Armor.Text = "HQ Armor"
+Armor.TextColor3 = Color3.fromRGB(255, 255, 255)
+Armor.TextSize = 12.000
+Armor.TextWrapped = true
+Armor.TextXAlignment = Enum.TextXAlignment.Left
+
+TextButton_18.Name = "TextButton"
+TextButton_18.Parent = Armor
+TextButton_18.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+TextButton_18.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_18.Position = UDim2.new(0.699999988, 0, 0.111111112, 0)
+TextButton_18.Size = UDim2.new(0, 30, 0, 21)
+TextButton_18.ImageColor3 = Color3.fromRGB(26, 26, 26)
+TextButton_18.ScaleType = Enum.ScaleType.Slice
+TextButton_18.SliceCenter = Rect.new(32, 32, 224, 224)
+
+TextLabel_24.Parent = TextButton_18
+TextLabel_24.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_24.BackgroundTransparency = 1.000
+TextLabel_24.BorderSizePixel = 0
+TextLabel_24.Position = UDim2.new(0.5, 0, 0.5, 0)
+TextLabel_24.Size = UDim2.new(1, 0, 0.899999976, 0)
+TextLabel_24.Font = Enum.Font.SciFi
+TextLabel_24.Text = ""
+TextLabel_24.TextColor3 = Color3.fromRGB(255, 0, 0)
+TextLabel_24.TextSize = 16.000
+
+Riles.Name = "Riles"
+Riles.Parent = OptionHolder_4
+Riles.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Riles.BackgroundTransparency = 1.000
+Riles.Position = UDim2.new(0.131386861, 0, 0.250704229, 0)
+Riles.Size = UDim2.new(0, 100, 0, 27)
+Riles.Font = Enum.Font.SourceSansLight
+Riles.Text = "Any Rifle"
+Riles.TextColor3 = Color3.fromRGB(255, 255, 255)
+Riles.TextSize = 15.000
+Riles.TextWrapped = true
+Riles.TextXAlignment = Enum.TextXAlignment.Left
+
+TextButton_19.Name = "TextButton"
+TextButton_19.Parent = Riles
+TextButton_19.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+TextButton_19.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_19.Position = UDim2.new(0.699999988, 0, 0.111111112, 0)
+TextButton_19.Size = UDim2.new(0, 30, 0, 21)
+TextButton_19.ImageColor3 = Color3.fromRGB(26, 26, 26)
+TextButton_19.ScaleType = Enum.ScaleType.Slice
+TextButton_19.SliceCenter = Rect.new(32, 32, 224, 224)
+
+TextLabel_25.Parent = TextButton_19
+TextLabel_25.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_25.BackgroundTransparency = 1.000
+TextLabel_25.BorderSizePixel = 0
+TextLabel_25.Position = UDim2.new(0.5, 0, 0.5, 0)
+TextLabel_25.Size = UDim2.new(1, 0, 0.899999976, 0)
+TextLabel_25.Font = Enum.Font.SciFi
+TextLabel_25.Text = ""
+TextLabel_25.TextColor3 = Color3.fromRGB(255, 0, 0)
+TextLabel_25.TextSize = 16.000
+
+Dynamite.Name = "Dynamite"
+Dynamite.Parent = OptionHolder_4
+Dynamite.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Dynamite.BackgroundTransparency = 1.000
+Dynamite.Position = UDim2.new(0.131386861, 0, 0.174647897, 0)
+Dynamite.Size = UDim2.new(0, 100, 0, 27)
+Dynamite.Font = Enum.Font.SourceSansLight
+Dynamite.Text = "Dynamite"
+Dynamite.TextColor3 = Color3.fromRGB(255, 255, 255)
+Dynamite.TextSize = 15.000
+Dynamite.TextWrapped = true
+Dynamite.TextXAlignment = Enum.TextXAlignment.Left
+
+TextButton_20.Name = "TextButton"
+TextButton_20.Parent = Dynamite
+TextButton_20.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+TextButton_20.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_20.Position = UDim2.new(0.699999988, 0, 0.111111112, 0)
+TextButton_20.Size = UDim2.new(0, 30, 0, 21)
+TextButton_20.ImageColor3 = Color3.fromRGB(26, 26, 26)
+TextButton_20.ScaleType = Enum.ScaleType.Slice
+TextButton_20.SliceCenter = Rect.new(32, 32, 224, 224)
+
+TextLabel_26.Parent = TextButton_20
+TextLabel_26.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_26.BackgroundTransparency = 1.000
+TextLabel_26.BorderSizePixel = 0
+TextLabel_26.Position = UDim2.new(0.5, 0, 0.5, 0)
+TextLabel_26.Size = UDim2.new(1, 0, 0.899999976, 0)
+TextLabel_26.Font = Enum.Font.SciFi
+TextLabel_26.Text = ""
+TextLabel_26.TextColor3 = Color3.fromRGB(255, 0, 0)
+TextLabel_26.TextSize = 16.000
+
+Staff.Name = "Staff"
+Staff.Parent = Reaper
+Staff.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Staff.BackgroundTransparency = 1.000
+Staff.Position = UDim2.new(-0.000327177346, 0, -0.000440884382, 0)
+Staff.Size = UDim2.new(0.090023227, 0, 0.0474039018, 0)
+Staff.Font = Enum.Font.GothamBold
+Staff.Text = "No Staff <-"
+Staff.TextColor3 = Color3.fromRGB(255, 255, 255)
+Staff.TextScaled = true
+Staff.TextSize = 15.000
+Staff.TextWrapped = true
+
+online.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(0.61, Color3.fromRGB(255, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 0, 0))}
+online.Rotation = 90
+online.Name = "online"
+online.Parent = Staff
+
+-- Scripts:
+
+local function GHSTB_fake_script() -- Reaper.Start Up 
+	local script = Instance.new('LocalScript', Reaper)
+
+	local Gui = script.Parent
+	local Audio = Gui:WaitForChild("Audio")
+	local Player = game.Players.LocalPlayer
+	
+	local Start = Instance.new("Sound") Start.SoundId = "rbxassetid://319332735" Start.Parent = Audio Start.Volume = 0.1
+	local Music = Instance.new("Sound") Music.SoundId = "rbxassetid://1588990518" Music.Parent = Audio
+	local SFX = Instance.new("Sound") SFX.SoundId = "rbxassetid://134012322" SFX.Parent = Audio
+	local Clicked = Instance.new("Sound") Clicked.SoundId = "rbxassetid://149162327" Clicked.Parent = Audio Clicked.Name = "Clicked"
+	
+	local Logos = Gui:WaitForChild("logoz")
+	
+	local Loading = Gui:WaitForChild("Verify"):WaitForChild("Loading")
+	
+	local value = Instance.new("NumberValue") value.Name = "delay" value.Value = 1 value.Parent = script.Parent
+	local value2 = Instance.new("NumberValue") value2.Name = "chance" value2.Value = 1 value2.Parent = script.Parent
+	
+	-- Variables ^
+	
+	wait(2)
+	Start:Play()
+	Logos:TweenPosition(UDim2.new(0.343, 0,0.224, 0), "Out", "Bounce", 3)
+	wait(3)
+	SFX:Play()
+	Logos:TweenPosition(UDim2.new(0.343, 0,1, 0), "Out", "Linear", 0.4)
+	
+	-- Logo ^
+	
+	wait(1)
+	Logos:Destroy()
+	Gui.PVP.Visible = true
+	Gui.ESP.Visible = true
+	Gui.Settings.Visible = true
+	Gui["ESP2"].Visible = true
+	script:Destroy()
+	
+	-- Fake Loading ^
+end
+coroutine.wrap(GHSTB_fake_script)()
+local function VMYV_fake_script() -- Minimize.LocalScript 
+	local script = Instance.new('LocalScript', Minimize)
+
+	local button = script.Parent
+	local gui = button.Parent.Parent
+	local tab = gui:WaitForChild("OptionHolder")
+	
+	button.MouseButton1Click:Connect(function()
+		if tab.Visible == true then
+			button.Text = "+"
+			tab.Visible = false
+			gui.ImageTransparency = 1
+		else
+			button.Text = "-"
+			tab.Visible = true
+			gui.ImageTransparency = 0
+		end
+	end)
+	
+	
+end
+coroutine.wrap(VMYV_fake_script)()
+local function DFGUQJ_fake_script() -- TextButton.Main 
+	local script = Instance.new('LocalScript', TextButton)
+
+	local Button = script.Parent
+	local label = Button:WaitForChild("TextLabel")
+	local on = false
+	local sfx = Button:WaitForChild("Click")
+	
+	Button.MouseButton1Click:Connect(function()
+		local storage = workspace.SpawnerZones.Plants:GetDescendants()
+		if on == false then
+			sfx:Play()
+			on = true
+			label.Text = "X"
+			label.TextColor3 = Color3.fromRGB(170, 0, 255)
+	
+			for i, Item in ipairs(storage) do
+				if Item:IsA("Model") and Item.Name == "AloeVera" then
+					local x = Instance.new("BillboardGui") 
+					x.Parent = Item:FindFirstChildWhichIsA("BasePart")
+	
+					x.Name = "AloeVeraX"
+					x.AlwaysOnTop = true
+					x.Size = UDim2.new(2,0,2,0)
+					local b = Instance.new('Frame',x)
+					b.Size = UDim2.new(2,0,2,0)
+					b.BackgroundColor3 = Color3.new(1, 0.333333, 1)
+				end
+			end
+	
+		elseif on == true then
+			sfx:Play()
+			on = false
+			label.Text = ""
+			label.TextColor3 = Color3.fromRGB(255, 0, 0)
+	
+			for i, Item in ipairs(storage) do
+				if Item:IsA("BillboardGui") and Item.Name == "AloeVeraX" then
+					Item:Destroy()
+				end
+			end
+	
+	
+	
+		end
+	end)
+end
+coroutine.wrap(DFGUQJ_fake_script)()
+local function ZSXLAIE_fake_script() -- TextButton.new 
+	local script = Instance.new('LocalScript', TextButton)
+
+	local new = Instance.new("Sound")
+	new.SoundId = "rbxassetid://421058925"
+	new.Parent = script.Parent
+	new.Name = "Click"
+end
+coroutine.wrap(ZSXLAIE_fake_script)()
+local function JXYY_fake_script() -- Aleio.LocalScript 
+	local script = Instance.new('LocalScript', Aleio)
+
+	while true do
+		for i = 0,1,0.01 do
+			script.Parent.TextColor3 = Color3.fromHSV(i,1,1)
+			wait(0.1)
+		end
+	end
+end
+coroutine.wrap(JXYY_fake_script)()
+local function WRCKO_fake_script() -- TextButton_2.Main 
+	local script = Instance.new('LocalScript', TextButton_2)
+
+	local Button = script.Parent
+	local label = Button:WaitForChild("TextLabel")
+	local on = false
+	local sfx = Button:WaitForChild("Click")
+	local loop = false
+	
+	Button.MouseButton1Click:Connect(function()
+		local storage = workspace.SpawnerZones.OreNodes:GetDescendants()
+		if on == false then
+			sfx:Play()
+			on = true
+			label.Text = "X"
+			label.TextColor3 = Color3.fromRGB(54, 54, 54)
+			loop = true
+	
+			repeat 
+				for i, Item in ipairs(storage) do
+					if Item:IsA("Model") and Item.Name == "StoneNode" then
+						local x = Instance.new("BillboardGui") 
+						x.Parent = Item:FindFirstChildWhichIsA("BasePart")
+	
+						x.Name = "StoneX"
+						x.AlwaysOnTop = true
+						x.Size = UDim2.new(2,0,2,0)
+						local b = Instance.new('Frame',x)
+						b.Size = UDim2.new(2,0,2,0)
+						b.BackgroundColor3 = Color3.new(0.211765, 0.207843, 0.2)
+					end
+				end
+				wait(60)
+			until loop == false
+	
+		elseif on == true then
+			sfx:Play()
+			on = false
+			label.Text = ""
+			label.TextColor3 = Color3.fromRGB(255, 0, 0)
+			loop = false
+	
+			for i, Item in ipairs(storage) do
+				if Item:IsA("BillboardGui") and Item.Name == "StoneX" then
+					Item:Destroy()
+				end
+			end
+	
+	
+	
+		end
+	end)
+end
+coroutine.wrap(WRCKO_fake_script)()
+local function HYQY_fake_script() -- TextButton_2.new 
+	local script = Instance.new('LocalScript', TextButton_2)
+
+	local new = Instance.new("Sound")
+	new.SoundId = "rbxassetid://421058925"
+	new.Parent = script.Parent
+	new.Name = "Click"
+end
+coroutine.wrap(HYQY_fake_script)()
+local function LAIOCHU_fake_script() -- Stone.LocalScript 
+	local script = Instance.new('LocalScript', Stone)
+
+	while true do
+		for i = 0,1,0.01 do
+			script.Parent.TextColor3 = Color3.fromHSV(i,1,1)
+			wait(0.1)
+		end
+	end
+end
+coroutine.wrap(LAIOCHU_fake_script)()
+local function NLWWIUE_fake_script() -- TextButton_3.Main 
+	local script = Instance.new('LocalScript', TextButton_3)
+
+	local Button = script.Parent
+	local label = Button:WaitForChild("TextLabel")
+	local on = false
+	local sfx = Button:WaitForChild("Click")
+	local loop = false
+	
+	Button.MouseButton1Click:Connect(function()
+		local storage = workspace.SpawnerZones.OreNodes:GetDescendants()
+		if on == false then
+			sfx:Play()
+			on = true
+			label.Text = "X"
+			label.TextColor3 = Color3.fromRGB(85, 170, 255)
+			loop = true
+	
+			repeat 
+				for i, Item in ipairs(storage) do
+					if Item:IsA("Model") and Item.Name == "IronNode" then
+						local x = Instance.new("BillboardGui") 
+						x.Parent = Item:FindFirstChildWhichIsA("BasePart")
+	
+						x.Name = "IronX"
+						x.AlwaysOnTop = true
+						x.Size = UDim2.new(2,0,2,0)
+						local b = Instance.new('Frame',x)
+						b.Size = UDim2.new(2,0,2,0)
+						b.BackgroundColor3 = Color3.new(0.333333, 0.666667, 1)
+					end
+				end
+				wait(60)
+			until loop == false
+	
+		elseif on == true then
+			sfx:Play()
+			on = false
+			label.Text = ""
+			label.TextColor3 = Color3.fromRGB(255, 0, 0)
+			loop = false
+	
+			for i, Item in ipairs(storage) do
+				if Item:IsA("BillboardGui") and Item.Name == "IronX" then
+					Item:Destroy()
+				end
+			end
+	
+	
+	
+		end
+	end)
+end
+coroutine.wrap(NLWWIUE_fake_script)()
+local function JEAR_fake_script() -- TextButton_3.new 
+	local script = Instance.new('LocalScript', TextButton_3)
+
+	local new = Instance.new("Sound")
+	new.SoundId = "rbxassetid://421058925"
+	new.Parent = script.Parent
+	new.Name = "Click"
+end
+coroutine.wrap(JEAR_fake_script)()
+local function QFJUMF_fake_script() -- Metal.LocalScript 
+	local script = Instance.new('LocalScript', Metal)
+
+	while true do
+		for i = 0,1,0.01 do
+			script.Parent.TextColor3 = Color3.fromHSV(i,1,1)
+			wait(0.1)
+		end
+	end
+end
+coroutine.wrap(QFJUMF_fake_script)()
+local function TMRG_fake_script() -- TextButton_4.Main 
+	local script = Instance.new('LocalScript', TextButton_4)
+
+	local Button = script.Parent
+	local label = Button:WaitForChild("TextLabel")
+	local on = false
+	local sfx = Button:WaitForChild("Click")
+	local loop = false
+	
+	Button.MouseButton1Click:Connect(function()
+		local storage = workspace.SpawnerZones.OreNodes:GetDescendants()
+		if on == false then
+			sfx:Play()
+			on = true
+			label.Text = "X"
+			label.TextColor3 = Color3.fromRGB(255, 255, 127)
+			loop = true
+	
+			repeat 
+				for i, Item in ipairs(storage) do
+					if Item:IsA("Model") and Item.Name == "SulfurNode" then
+						local x = Instance.new("BillboardGui") 
+						x.Parent = Item:FindFirstChildWhichIsA("BasePart")
+	
+						x.Name = "SulfurX"
+						x.AlwaysOnTop = true
+						x.Size = UDim2.new(2,0,2,0)
+						local b = Instance.new('Frame',x)
+						b.Size = UDim2.new(2,0,2,0)
+						b.BackgroundColor3 = Color3.new(1, 1, 0.498039)
+					end
+				end
+				wait(60)
+			until loop == false
+	
+		elseif on == true then
+			sfx:Play()
+			on = false
+			label.Text = ""
+			label.TextColor3 = Color3.fromRGB(255, 0, 0)
+			loop = false
+	
+			for i, Item in ipairs(storage) do
+				if Item:IsA("BillboardGui") and Item.Name == "SulfurX" then
+					Item:Destroy()
+				end
+			end
+	
+	
+	
+		end
+	end)
+end
+coroutine.wrap(TMRG_fake_script)()
+local function LUYSYZC_fake_script() -- TextButton_4.new 
+	local script = Instance.new('LocalScript', TextButton_4)
+
+	local new = Instance.new("Sound")
+	new.SoundId = "rbxassetid://421058925"
+	new.Parent = script.Parent
+	new.Name = "Click"
+end
+coroutine.wrap(LUYSYZC_fake_script)()
+local function XLKRF_fake_script() -- Sulfur.LocalScript 
+	local script = Instance.new('LocalScript', Sulfur)
+
+	while true do
+		for i = 0,1,0.01 do
+			script.Parent.TextColor3 = Color3.fromHSV(i,1,1)
+			wait(0.1)
+		end
+	end
+end
+coroutine.wrap(XLKRF_fake_script)()
+local function JHCY_fake_script() -- TextButton_5.Main 
+	local script = Instance.new('LocalScript', TextButton_5)
+
+	local Button = script.Parent
+	local label = Button:WaitForChild("TextLabel")
+	local on = false
+	local sfx = Button:WaitForChild("Click")
+	
+	Button.MouseButton1Click:Connect(function()
+		local storage = workspace.SpawnerZones.Plants:GetDescendants()
+		if on == false then
+			sfx:Play()
+			on = true
+			label.Text = "X"
+			label.TextColor3 = Color3.fromRGB(85, 255, 127)
+	
+			for i, Item in ipairs(storage) do
+				if Item:IsA("Model") and Item.Name == "Nettle" or Item.Name == "Cactus3" or Item.Name == "Cactus2" or Item.Name == "Cactus1" then
+					local x = Instance.new("BillboardGui") 
+					x.Parent = Item:FindFirstChildWhichIsA("BasePart")
+	
+					x.Name = "NettleX"
+					x.AlwaysOnTop = true
+					x.Size = UDim2.new(2,0,2,0)
+					local b = Instance.new('Frame',x)
+					b.Size = UDim2.new(2,0,2,0)
+					b.BackgroundColor3 = Color3.new(0.333333, 1, 0.498039)
+				end
+			end
+	
+		elseif on == true then
+			sfx:Play()
+			on = false
+			label.Text = ""
+			label.TextColor3 = Color3.fromRGB(255, 0, 0)
+	
+			for i, Item in ipairs(storage) do
+				if Item:IsA("BillboardGui") and Item.Name == "NettleX" then
+					Item:Destroy()
+				end
+			end
+	
+	
+	
+		end
+	end)
+end
+coroutine.wrap(JHCY_fake_script)()
+local function WXASQI_fake_script() -- TextButton_5.new 
+	local script = Instance.new('LocalScript', TextButton_5)
+
+	local new = Instance.new("Sound")
+	new.SoundId = "rbxassetid://421058925"
+	new.Parent = script.Parent
+	new.Name = "Click"
+end
+coroutine.wrap(WXASQI_fake_script)()
+local function CIWN_fake_script() -- Cloth.LocalScript 
+	local script = Instance.new('LocalScript', Cloth)
+
+	while true do
+		for i = 0,1,0.01 do
+			script.Parent.TextColor3 = Color3.fromHSV(i,1,1)
+			wait(0.1)
+		end
+	end
+end
+coroutine.wrap(CIWN_fake_script)()
+local function AMAX_fake_script() -- TextButton_6.Main 
+	local script = Instance.new('LocalScript', TextButton_6)
+
+	local Button = script.Parent
+	local label = Button:WaitForChild("TextLabel")
+	local on = false
+	local sfx = Button:WaitForChild("Click")
+	
+	Button.MouseButton1Click:Connect(function()
+		local storage = workspace.SpawnerZones.Plants:GetDescendants()
+		if on == false then
+			sfx:Play()
+			on = true
+			label.Text = "X"
+			label.TextColor3 = Color3.fromRGB(170, 85, 0)
+	
+			for i, Item in ipairs(storage) do
+				if Item:IsA("Model") and Item.Name == "Mushrooms" then
+					local x = Instance.new("BillboardGui") 
+					x.Parent = Item:FindFirstChildWhichIsA("BasePart")
+	
+					x.Name = "MushroomsX"
+					x.AlwaysOnTop = true
+					x.Size = UDim2.new(2,0,2,0)
+					local b = Instance.new('Frame',x)
+					b.Size = UDim2.new(2,0,2,0)
+					b.BackgroundColor3 = Color3.new(0.666667, 0.333333, 0)
+				end
+			end
+	
+		elseif on == true then
+			sfx:Play()
+			on = false
+			label.Text = ""
+			label.TextColor3 = Color3.fromRGB(255, 0, 0)
+	
+			for i, Item in ipairs(storage) do
+				if Item:IsA("BillboardGui") and Item.Name == "MushroomsX" then
+					Item:Destroy()
+				end
+			end
+	
+	
+	
+		end
+	end)
+end
+coroutine.wrap(AMAX_fake_script)()
+local function LXTGE_fake_script() -- TextButton_6.new 
+	local script = Instance.new('LocalScript', TextButton_6)
+
+	local new = Instance.new("Sound")
+	new.SoundId = "rbxassetid://421058925"
+	new.Parent = script.Parent
+	new.Name = "Click"
+end
+coroutine.wrap(LXTGE_fake_script)()
+local function EXNTIAH_fake_script() -- Mushroom.LocalScript 
+	local script = Instance.new('LocalScript', Mushroom)
+
+	while true do
+		for i = 0,1,0.01 do
+			script.Parent.TextColor3 = Color3.fromHSV(i,1,1)
+			wait(0.1)
+		end
+	end
+end
+coroutine.wrap(EXNTIAH_fake_script)()
+local function VPHVS_fake_script() -- OptionHolder.LocalScript 
+	local script = Instance.new('LocalScript', OptionHolder)
+
+	wait(0.1)
+	
+	local dragging = false
+	local Player = game.Players.LocalPlayer
+	local Mouse = Player:GetMouse()
+	
+	local Frame = script.Parent
+	local Quar = Frame.Parent
+	
+	script.Parent.DragBegin:connect(function(pos)
+		print(pos.X.Scale, pos.X.Offset, pos.Y.Scale, pos.Y.Offset)
+		dragging = true
+	end)
+	
+	script.Parent.DragStopped:connect(function()
+		dragging = false
+	end)
+	
+	function ConvertToOffset(Pos, ParentFrame)
+		local x = Pos.X.Scale * ParentFrame.AbsoluteSize.X
+		local y = Pos.Y.Scale * ParentFrame.AbsoluteSize.Y
+		return UDim2.new(0, Pos.X.Offset + x, 0, Pos.Y.Offset + y)
+	end
+	
+	Mouse.Move:connect(function()
+		if not dragging then return end
+		local asQ = Quar.AbsoluteSize
+		local asF = Frame.AbsoluteSize
+		local pos = ConvertToOffset(Frame.Position, Quar)
+		local fixedX = math.max(0, math.min(pos.X.Offset, asQ.X - asF.X))
+		local fixedY = math.max(0, math.min(pos.Y.Offset, asQ.Y - asF.Y))
+		local fixedPos = UDim2.new(0, fixedX, 0, fixedY)
+		Frame.Position = fixedPos
+	end)
+end
+coroutine.wrap(VPHVS_fake_script)()
+local function AJTAQZ_fake_script() -- ESP.DraggableScript 
+	local script = Instance.new('LocalScript', ESP)
+
+	--This script was created by Tiffblocks and uploaded by me :P
+	local UserInputService = game:GetService("UserInputService")
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	local function update(input)
+		local delta = input.Position - dragStart
+		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	end
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+			
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			update(input)
+		end
+	end)
+end
+coroutine.wrap(AJTAQZ_fake_script)()
+local function PAVIKS_fake_script() -- Minimize_2.LocalScript 
+	local script = Instance.new('LocalScript', Minimize_2)
+
+	local button = script.Parent
+	local gui = button.Parent.Parent
+	local tab = gui:WaitForChild("OptionHolder")
+	
+	button.MouseButton1Click:Connect(function()
+		if tab.Visible == true then
+			button.Text = "+"
+			tab.Visible = false
+			gui.ImageTransparency = 1
+		else
+			button.Text = "-"
+			tab.Visible = true
+			gui.ImageTransparency = 0
+		end
+	end)
+	
+	
+end
+coroutine.wrap(PAVIKS_fake_script)()
+local function NRTM_fake_script() -- TextButton_7.Main 
+	local script = Instance.new('LocalScript', TextButton_7)
+
+	local Button = script.Parent
+	local label = Button:WaitForChild("TextLabel")
+	local on = false
+	local sfx = Button:WaitForChild("Click")
+	
+	Button.MouseButton1Click:Connect(function()
+		if on == false then
+			sfx:Play()
+			on = true
+			label.Text = "On"
+			label.TextColor3 = Color3.fromRGB(85, 255, 0)
+			
+			game.Lighting.Blur:Destroy()
+			script.Parent.Parent.Parent.Parent.Parent:Destroy()
+	
+		elseif on == true then
+			sfx:Play()
+			on = false
+			label.Text = "Off"
+			label.TextColor3 = Color3.fromRGB(255, 0, 0)
+			
+	
+		end
+	end)
+end
+coroutine.wrap(NRTM_fake_script)()
+local function DLFU_fake_script() -- TextButton_7.new 
+	local script = Instance.new('LocalScript', TextButton_7)
+
+	local new = Instance.new("Sound")
+	new.SoundId = "rbxassetid://421058925"
+	new.Parent = script.Parent
+	new.Name = "Click"
+end
+coroutine.wrap(DLFU_fake_script)()
+local function XVNA_fake_script() -- Add.Main 
+	local script = Instance.new('LocalScript', Add)
+
+	local Button = script.Parent
+	local label = Button:WaitForChild("TextLabel")
+	local sfx = Button:WaitForChild("Click")
+	local delayz = Button.Parent.Parent.Parent.Parent:WaitForChild("delay")
+	
+	Button.MouseButton1Click:Connect(function()
+			sfx:Play()
+			delayz.Value = delayz.Value + .1
+			Button.Parent.Text = ("Kill Aura Delay (".. delayz.Value.. ")")
+	end)
+end
+coroutine.wrap(XVNA_fake_script)()
+local function YKVWFO_fake_script() -- Add.new 
+	local script = Instance.new('LocalScript', Add)
+
+	local new = Instance.new("Sound")
+	new.SoundId = "rbxassetid://421058925"
+	new.Parent = script.Parent
+	new.Name = "Click"
+end
+coroutine.wrap(YKVWFO_fake_script)()
+local function MTUQPZ_fake_script() -- Minus.Main 
+	local script = Instance.new('LocalScript', Minus)
+
+	local Button = script.Parent
+	local label = Button:WaitForChild("TextLabel")
+	local sfx = Button:WaitForChild("Click")
+	local delayz = Button.Parent.Parent.Parent.Parent:WaitForChild("delay")
+	
+	Button.MouseButton1Click:Connect(function()
+		sfx:Play()
+		delayz.Value = delayz.Value - .1
+		Button.Parent.Text = ("Kill Aura Delay (".. delayz.Value.. ")")
+	end)
+end
+coroutine.wrap(MTUQPZ_fake_script)()
+local function KEFF_fake_script() -- Minus.new 
+	local script = Instance.new('LocalScript', Minus)
+
+	local new = Instance.new("Sound")
+	new.SoundId = "rbxassetid://421058925"
+	new.Parent = script.Parent
+	new.Name = "Click"
+end
+coroutine.wrap(KEFF_fake_script)()
+local function DGSCLT_fake_script() -- OptionHolder_2.LocalScript 
+	local script = Instance.new('LocalScript', OptionHolder_2)
+
+	wait(0.1)
+	
+	local dragging = false
+	local Player = game.Players.LocalPlayer
+	local Mouse = Player:GetMouse()
+	
+	local Frame = script.Parent
+	local Quar = Frame.Parent
+	
+	script.Parent.DragBegin:connect(function(pos)
+		print(pos.X.Scale, pos.X.Offset, pos.Y.Scale, pos.Y.Offset)
+		dragging = true
+	end)
+	
+	script.Parent.DragStopped:connect(function()
+		dragging = false
+	end)
+	
+	function ConvertToOffset(Pos, ParentFrame)
+		local x = Pos.X.Scale * ParentFrame.AbsoluteSize.X
+		local y = Pos.Y.Scale * ParentFrame.AbsoluteSize.Y
+		return UDim2.new(0, Pos.X.Offset + x, 0, Pos.Y.Offset + y)
+	end
+	
+	Mouse.Move:connect(function()
+		if not dragging then return end
+		local asQ = Quar.AbsoluteSize
+		local asF = Frame.AbsoluteSize
+		local pos = ConvertToOffset(Frame.Position, Quar)
+		local fixedX = math.max(0, math.min(pos.X.Offset, asQ.X - asF.X))
+		local fixedY = math.max(0, math.min(pos.Y.Offset, asQ.Y - asF.Y))
+		local fixedPos = UDim2.new(0, fixedX, 0, fixedY)
+		Frame.Position = fixedPos
+	end)
+end
+coroutine.wrap(DGSCLT_fake_script)()
+local function UEWEUAO_fake_script() -- TextButton_8.Main 
+	local script = Instance.new('LocalScript', TextButton_8)
+
+	local Button = script.Parent
+	local label = Button:WaitForChild("TextLabel")
+	local on = false
+	local sfx = Button:WaitForChild("Click")
+	
+	Button.MouseButton1Click:Connect(function()
+		if on == false then
+			local playername = game.Players.LocalPlayer:WaitForChild("PlayerGui"):WaitForChild("MainGui"):WaitForChild("Fullscreen"):WaitForChild("Inventory"):WaitForChild("ClothingFrame"):WaitForChild("PlayerName")
+	
+			sfx:Play()
+			on = true
+			label.Text = "On"
+			label.TextColor3 = Color3.fromRGB(85, 255, 0)
+			playername.Text = "ninja from fortnite"
+			
+		elseif on == true then
+			local playername = game.Players.LocalPlayer:WaitForChild("PlayerGui"):WaitForChild("MainGui"):WaitForChild("Fullscreen"):WaitForChild("Inventory"):WaitForChild("ClothingFrame"):WaitForChild("PlayerName")
+	
+			sfx:Play()
+			on = false
+			label.Text = "Off"
+			label.TextColor3 = Color3.fromRGB(255, 0, 0)
+			playername.Text = (game.Players.LocalPlayer.Name)
+			
+	
+		end
+	end)
+end
+coroutine.wrap(UEWEUAO_fake_script)()
+local function CKICBM_fake_script() -- TextButton_8.new 
+	local script = Instance.new('LocalScript', TextButton_8)
+
+	local new = Instance.new("Sound")
+	new.SoundId = "rbxassetid://421058925"
+	new.Parent = script.Parent
+	new.Name = "Click"
+end
+coroutine.wrap(CKICBM_fake_script)()
+local function AUJZ_fake_script() -- Settings.DraggableScript 
+	local script = Instance.new('LocalScript', Settings)
+
+	--This script was created by Tiffblocks and uploaded by me :P
+	local UserInputService = game:GetService("UserInputService")
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	local function update(input)
+		local delta = input.Position - dragStart
+		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	end
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+			
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			update(input)
+		end
+	end)
+end
+coroutine.wrap(AUJZ_fake_script)()
+local function VXSG_fake_script() -- Minimize_3.LocalScript 
+	local script = Instance.new('LocalScript', Minimize_3)
+
+	local button = script.Parent
+	local gui = button.Parent.Parent
+	local tab = gui:WaitForChild("OptionHolder")
+	
+	button.MouseButton1Click:Connect(function()
+		if tab.Visible == true then
+			button.Text = "+"
+			tab.Visible = false
+			gui.ImageTransparency = 1
+		else
+			button.Text = "-"
+			tab.Visible = true
+			gui.ImageTransparency = 0
+		end
+	end)
+	
+	
+end
+coroutine.wrap(VXSG_fake_script)()
+local function MFLWSC_fake_script() -- TextButton_9.Main 
+	local script = Instance.new('LocalScript', TextButton_9)
+
+	local Button = script.Parent
+	local label = Button:WaitForChild("TextLabel")
+	local on = false
+	local sfx = Button:WaitForChild("Click")
+	
+	Button.MouseButton1Click:Connect(function()
+		local storage = workspace.BuiltObjects:GetDescendants()
+		if on == false then
+			sfx:Play()
+			on = true
+			label.Text = "X"
+			label.TextColor3 = Color3.fromRGB(85, 255, 0)
+	
+			for i, Item in ipairs(storage) do
+				if Item:IsA("Model") and Item:FindFirstChildWhichIsA("BasePart") then
+					Item:FindFirstChildWhichIsA("BasePart").Transparency = 0.8
+				end
+			end
+	
+		elseif on == true then
+			sfx:Play()
+			on = false
+			label.Text = ""
+			label.TextColor3 = Color3.fromRGB(255, 0, 0)
+			
+			for i, Item in ipairs(storage) do
+				if Item:IsA("Model") and Item:FindFirstChildWhichIsA("BasePart") then
+					Item:FindFirstChildWhichIsA("BasePart").Transparency = 0
+				end
+			end
+	
+	
+	
+		end
+	end)
+end
+coroutine.wrap(MFLWSC_fake_script)()
+local function QCEUNE_fake_script() -- TextButton_9.new 
+	local script = Instance.new('LocalScript', TextButton_9)
+
+	local new = Instance.new("Sound")
+	new.SoundId = "rbxassetid://421058925"
+	new.Parent = script.Parent
+	new.Name = "Click"
+end
+coroutine.wrap(QCEUNE_fake_script)()
+local function RPQMXCA_fake_script() -- XRay.LocalScript 
+	local script = Instance.new('LocalScript', XRay)
+
+	while true do
+		for i = 0,1,0.01 do
+			script.Parent.TextColor3 = Color3.fromHSV(i,1,1)
+			wait(0.1)
+		end
+	end
+end
+coroutine.wrap(RPQMXCA_fake_script)()
+local function VYOS_fake_script() -- TextButton_10.new 
+	local script = Instance.new('LocalScript', TextButton_10)
+
+	local new = Instance.new("Sound")
+	new.SoundId = "rbxassetid://421058925"
+	new.Parent = script.Parent
+	new.Name = "Click"
+end
+coroutine.wrap(VYOS_fake_script)()
+local function TTAARA_fake_script() -- TextButton_10.Main 
+	local script = Instance.new('LocalScript', TextButton_10)
+
+	local Button = script.Parent
+	local label = Button:WaitForChild("TextLabel")
+	local on = false
+	local sfx = Button:WaitForChild("Click")
+	local Players = game.Players
+	
+	Button.MouseButton1Click:Connect(function()
+		if on == false then
+			sfx:Play()
+			on = true
+			label.Text = "X"
+			label.TextColor3 = Color3.fromRGB(85, 255, 0)
+	
+			for i, plr in ipairs(Players:GetChildren()) do
+				if workspace:FindFirstChild(plr.Name) and workspace[plr.Name]:FindFirstChild("Head") and not workspace[plr.Name]:FindFirstChild("Head"):FindFirstChild("BillboardGui") then
+					local bill = Instance.new("BillboardGui", workspace[plr.Name].Head)
+					local name = Instance.new("TextLabel", bill)
+					bill.AlwaysOnTop = true
+					bill.Size = UDim2.new(0,55,0,55)
+					bill.StudsOffset = Vector3.new(0,2,0)
+					name.Size = UDim2.new(0,55,0,55)
+					name.BackgroundTransparency = 1
+					name.Text = (plr.Name)
+					name.TextColor3 = Color3.new(1, 1, 1)
+					name.Font = Enum.Font.SciFi
+					name.TextStrokeTransparency = 0
+					name.TextScaled = true
+				end
+			end
+	
+		elseif on == true then
+			sfx:Play()
+			on = false
+			label.Text = ""
+			label.TextColor3 = Color3.fromRGB(255, 0, 0)
+			
+			for i, plr in ipairs(Players:GetChildren()) do
+				if workspace:FindFirstChild(plr.Name) and workspace[plr.Name].Head:FindFirstChild("BillboardGui") then
+					workspace[plr.Name].Head:FindFirstChild("BillboardGui"):Destroy()
+				end
+			end
+	
+	
+	
+		end
+	end)
+	
+	
+	Players.PlayerAdded:Connect(function(victim)
+		if workspace:FindFirstChild(victim.Name) and workspace[victim.Name]:FindFirstChild("Head") and not workspace[victim.Name]:FindFirstChild("Head"):FindFirstChild("BillboardGui") and on == true then
+			local bill = Instance.new("BillboardGui", workspace[victim.Name].Head)
+				local name = Instance.new("TextLabel", bill)
+				bill.AlwaysOnTop = true
+			bill.Size = UDim2.new(0,40,0,40)
+			bill.StudsOffset = Vector3.new(0,2,0)
+			bill.ResetOnSpawn = false
+			name.Size = UDim2.new(0,40,0,40)
+				name.BackgroundTransparency = 1
+			name.Text = (victim.Name)
+				name.TextColor3 = Color3.new(1, 1, 1)
+				name.Font = Enum.Font.SciFi
+				name.TextStrokeTransparency = 0
+				name.TextScaled = true
+			end
+	end)
+end
+coroutine.wrap(TTAARA_fake_script)()
+local function CILAVJ_fake_script() -- NameESP.LocalScript 
+	local script = Instance.new('LocalScript', NameESP)
+
+	while true do
+		for i = 0,1,0.01 do
+			script.Parent.TextColor3 = Color3.fromHSV(i,1,1)
+			wait(0.1)
+		end
+	end
+end
+coroutine.wrap(CILAVJ_fake_script)()
+local function BCRXNI_fake_script() -- TextButton_11.Main 
+	local script = Instance.new('LocalScript', TextButton_11)
+
+	local Button = script.Parent
+	local label = Button:WaitForChild("TextLabel")
+	local on = false
+	local sfx = Button:WaitForChild("Click")
+	local loop = false
+	
+	local Plr = game.Players.LocalPlayer
+	
+	local delayz = Button.Parent.Parent.Parent.Parent:WaitForChild("delay")
+	local on = false
+	holdingUKey = false
+	
+	local remote = game:GetService("ReplicatedStorage").RemoteEvents.SwingMeleeWeapon
+	
+	Button.MouseButton1Click:Connect(function()
+		if on == false then
+			sfx:Play()
+			on = true
+			label.Text = "X"
+			label.TextColor3 = Color3.fromRGB(85, 255, 0)
+			loop = true
+		elseif on == true then
+		sfx:Play()
+		on = false
+		label.Text = ""
+		label.TextColor3 = Color3.fromRGB(255, 0, 0)
+		end
+	end)
+	
+	game:GetService("UserInputService").InputBegan:Connect(function(inputObject) 
+		-- Check if input is the U key.
+		if(inputObject.KeyCode==Enum.KeyCode.F) and on == true then
+			-- make variable true
+			holdingUKey = true
+	
+		end
+	end)
+	
+	
+	
+	-- Detect input ended
+	game:GetService("UserInputService").InputEnded:Connect(function(inputObject)
+		-- Check if input lost was the U key.
+		if(inputObject.KeyCode==Enum.KeyCode.F)then
+			-- make variable false
+			holdingUKey = false
+		end
+	end)
+	
+	
+	while true do
+		for i, Target in ipairs(game.Players:GetPlayers()) do
+			
+				if workspace:FindFirstChild(Target.Name) and workspace[Target.Name]:FindFirstChild("FaceHitBox") and holdingUKey == true then
+					if Target.Name  ~= (game.Players.LocalPlayer.Name) then
+					local HRP = workspace:FindFirstChild(Plr.Name).FaceHitBox
+	
+					local magnitude = (workspace:FindFirstChild(Target.Name).FaceHitBox.Position - HRP.Position).Magnitude
+						if magnitude < 15 then
+						    local userdata_1 = workspace[Target.Name]
+							local userdata_2 = workspace[Target.Name].FaceHitBox
+							
+							remote:FireServer(userdata_1, userdata_2)
+							wait(delayz.Value)
+						end
+					end
+				end
+			
+	
+		end
+		wait()
+	end
+end
+coroutine.wrap(BCRXNI_fake_script)()
+local function MQXK_fake_script() -- TextButton_11.new 
+	local script = Instance.new('LocalScript', TextButton_11)
+
+	local new = Instance.new("Sound")
+	new.SoundId = "rbxassetid://421058925"
+	new.Parent = script.Parent
+	new.Name = "Click"
+end
+coroutine.wrap(MQXK_fake_script)()
+local function DDIPJST_fake_script() -- TextButton_11.debug 
+	local script = Instance.new('LocalScript', TextButton_11)
+
+	local par = script.Parent
+	local localplayer = game.Players.LocalPlayer
+	
+	while wait(3.5) do
+		local humanoid = localplayer.Character:WaitForChild("Humanoid")
+		
+	   if humanoid.Health < 1 then
+			
+		    if par:FindFirstChild("Main") then
+			   par.Main:Destroy()
+		    end
+	
+		    local clone = par.Main2:Clone()
+		    clone.Name = "Main"
+	    	clone.Parent = par
+	      	clone.Disabled = false
+	
+		    par.TextLabel.TextColor3 = Color3.fromRGB(255, 0, 0)
+		    par.TextLabel.Text = "Off"
+	 
+			print("fixed")
+		end
+	end
+end
+coroutine.wrap(DDIPJST_fake_script)()
+local function JHPDD_fake_script() -- KillAura.LocalScript 
+	local script = Instance.new('LocalScript', KillAura)
+
+	while true do
+		for i = 0,1,0.01 do
+			script.Parent.TextColor3 = Color3.fromHSV(i,1,1)
+			wait(0.1)
+		end
+	end
+end
+coroutine.wrap(JHPDD_fake_script)()
+local function TKEZIRS_fake_script() -- TextButton_12.Main 
+	local script = Instance.new('LocalScript', TextButton_12)
+
+	local Button = script.Parent
+	local label = Button:WaitForChild("TextLabel")
+	local on = false
+	local sfx = Button:WaitForChild("Click")
+	  local event = game.ReplicatedStorage.RemoteEvents.HarvestEvent
+	local RunService = game:GetService("RunService")
+	local plr = game.Players.LocalPlayer
+	
+	Button.MouseButton1Click:Connect(function()
+		if on == false then
+			sfx:Play()
+			on = true
+			label.Text = "X"
+			label.TextColor3 = Color3.fromRGB(85, 255, 0)
+			RunService:BindToRenderStep("hitspam", 1, function()
+				if(game:GetService("UserInputService"):IsKeyDown(Enum.KeyCode.T)) then
+					local arg = plr:GetMouse().Target.Position
+					if plr:GetMouse().Target.Parent:FindFirstChild("Trunk") then
+						event:FireServer(plr:GetMouse().Target.Parent, arg)
+					end
+					
+					if plr:GetMouse().Target.Parent then
+						event:FireServer(plr:GetMouse().Target.Parent, arg)
+					end
+				end
+			end)
+			
+		elseif on == true then
+			sfx:Play()
+			on = false
+			label.Text = ""
+			label.TextColor3 = Color3.fromRGB(255, 0, 0)
+			RunService:UnbindFromRenderStep("hitspam")
+	
+		end
+	end)
+	
+	
+end
+coroutine.wrap(TKEZIRS_fake_script)()
+local function OOTQPN_fake_script() -- TextButton_12.new 
+	local script = Instance.new('LocalScript', TextButton_12)
+
+	local new = Instance.new("Sound")
+	new.SoundId = "rbxassetid://421058925"
+	new.Parent = script.Parent
+	new.Name = "Click"
+end
+coroutine.wrap(OOTQPN_fake_script)()
+local function FTAHRVM_fake_script() -- Farm.LocalScript 
+	local script = Instance.new('LocalScript', Farm)
+
+	while true do
+		for i = 0,1,0.01 do
+			script.Parent.TextColor3 = Color3.fromHSV(i,1,1)
+			wait(0.1)
+		end
+	end
+end
+coroutine.wrap(FTAHRVM_fake_script)()
+local function EVQZWIN_fake_script() -- TextButton_13.Main 
+	local script = Instance.new('LocalScript', TextButton_13)
+
+	local Button = script.Parent
+	local label = Button:WaitForChild("TextLabel")
+	local on = false
+	local sfx = Button:WaitForChild("Click")
+	local lighting = game:GetService("Lighting")
+	
+	Button.MouseButton1Click:Connect(function()
+		local storage = workspace.SpawnerZones.Plants:GetDescendants()
+		if on == false then
+			sfx:Play()
+			on = true
+			label.Text = "X"
+			label.TextColor3 = Color3.fromRGB(85, 255, 0)
+			
+			
+		elseif on == true then
+			sfx:Play()
+			on = false
+			label.Text = ""
+			label.TextColor3 = Color3.fromRGB(255, 0, 0)
+	
+		end
+	end)
+	
+	lighting:GetPropertyChangedSignal("ClockTime"):Connect(function()
+		if game:GetService("Lighting").ClockTime ~= 12 and on == true then
+			game:GetService("Lighting").ClockTime = 12
+		end
+	end)
+end
+coroutine.wrap(EVQZWIN_fake_script)()
+local function CUZXMH_fake_script() -- TextButton_13.new 
+	local script = Instance.new('LocalScript', TextButton_13)
+
+	local new = Instance.new("Sound")
+	new.SoundId = "rbxassetid://421058925"
+	new.Parent = script.Parent
+	new.Name = "Click"
+end
+coroutine.wrap(CUZXMH_fake_script)()
+local function XYHO_fake_script() -- FullBright.LocalScript 
+	local script = Instance.new('LocalScript', FullBright)
+
+	while true do
+		for i = 0,1,0.01 do
+			script.Parent.TextColor3 = Color3.fromHSV(i,1,1)
+			wait(0.1)
+		end
+	end
+end
+coroutine.wrap(XYHO_fake_script)()
+local function UTSFR_fake_script() -- TextButton_14.Main 
+	local script = Instance.new('LocalScript', TextButton_14)
+
+	local Button = script.Parent
+	local label = Button:WaitForChild("TextLabel")
+	local sfx = Button:WaitForChild("Click")
+	
+	Button.MouseButton1Click:Connect(function()
+		local storage = workspace.SpawnerZones.Plants:GetDescendants()
+		sfx:Play()
+		label.Text = "X"
+		label.TextColor3 = Color3.fromRGB(85, 255, 0)
+		Button:Destroy()
+	end)
+end
+coroutine.wrap(UTSFR_fake_script)()
+local function NBRUT_fake_script() -- TextButton_14.new 
+	local script = Instance.new('LocalScript', TextButton_14)
+
+	local new = Instance.new("Sound")
+	new.SoundId = "rbxassetid://421058925"
+	new.Parent = script.Parent
+	new.Name = "Click"
+end
+coroutine.wrap(NBRUT_fake_script)()
+local function TSJD_fake_script() -- SilentAim.LocalScript 
+	local script = Instance.new('LocalScript', SilentAim)
+
+	while true do
+		for i = 0,1,0.01 do
+			script.Parent.TextColor3 = Color3.fromHSV(i,1,1)
+			wait(0.1)
+		end
+	end
+end
+coroutine.wrap(TSJD_fake_script)()
+local function ISREIH_fake_script() -- OptionHolder_3.LocalScript 
+	local script = Instance.new('LocalScript', OptionHolder_3)
+
+	wait(0.1)
+	
+	local dragging = false
+	local Player = game.Players.LocalPlayer
+	local Mouse = Player:GetMouse()
+	
+	local Frame = script.Parent
+	local Quar = Frame.Parent
+	
+	script.Parent.DragBegin:connect(function(pos)
+		print(pos.X.Scale, pos.X.Offset, pos.Y.Scale, pos.Y.Offset)
+		dragging = true
+	end)
+	
+	script.Parent.DragStopped:connect(function()
+		dragging = false
+	end)
+	
+	function ConvertToOffset(Pos, ParentFrame)
+		local x = Pos.X.Scale * ParentFrame.AbsoluteSize.X
+		local y = Pos.Y.Scale * ParentFrame.AbsoluteSize.Y
+		return UDim2.new(0, Pos.X.Offset + x, 0, Pos.Y.Offset + y)
+	end
+	
+	Mouse.Move:connect(function()
+		if not dragging then return end
+		local asQ = Quar.AbsoluteSize
+		local asF = Frame.AbsoluteSize
+		local pos = ConvertToOffset(Frame.Position, Quar)
+		local fixedX = math.max(0, math.min(pos.X.Offset, asQ.X - asF.X))
+		local fixedY = math.max(0, math.min(pos.Y.Offset, asQ.Y - asF.Y))
+		local fixedPos = UDim2.new(0, fixedX, 0, fixedY)
+		Frame.Position = fixedPos
+	end)
+end
+coroutine.wrap(ISREIH_fake_script)()
+local function AGAA_fake_script() -- PVP.DraggableScript 
+	local script = Instance.new('LocalScript', PVP)
+
+	--This script was created by Tiffblocks and uploaded by me :P
+	local UserInputService = game:GetService("UserInputService")
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	local function update(input)
+		local delta = input.Position - dragStart
+		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	end
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+			
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			update(input)
+		end
+	end)
+end
+coroutine.wrap(AGAA_fake_script)()
+local function SKWLC_fake_script() -- Minimize_4.LocalScript 
+	local script = Instance.new('LocalScript', Minimize_4)
+
+	local button = script.Parent
+	local gui = button.Parent.Parent
+	local tab = gui:WaitForChild("OptionHolder")
+	
+	button.MouseButton1Click:Connect(function()
+		if tab.Visible == true then
+			button.Text = "+"
+			tab.Visible = false
+			gui.ImageTransparency = 1
+		else
+			button.Text = "-"
+			tab.Visible = true
+			gui.ImageTransparency = 0
+		end
+	end)
+	
+	
+end
+coroutine.wrap(SKWLC_fake_script)()
+local function FOBY_fake_script() -- TextButton_15.Main 
+	local script = Instance.new('LocalScript', TextButton_15)
+
+	local Button = script.Parent
+	local label = Button:WaitForChild("TextLabel")
+	local on = false
+	local sfx = Button:WaitForChild("Click")
+	
+	Button.MouseButton1Click:Connect(function()
+		local storage = workspace.BuiltObjects:GetDescendants()
+		if on == false then
+			sfx:Play()
+			on = true
+			label.Text = "X"
+	
+			label.TextColor3 = Color3.fromRGB(170, 0, 255)
+			print("---------------------------------------------------------")
+			
+			for i, Item in ipairs(storage) do
+				if Item:IsA("StringValue") and Item.Name == "ItemName" then
+					if Item.Value == "C4" then
+						    print("Found ".. (Item.Value))
+						    local x = Instance.new("BillboardGui", Item.Parent.Parent.Parent.Parent:FindFirstChildWhichIsA("BasePart"), 0.001)
+						    local xT = Instance.new("TextLabel", x)
+						    xT.Active = true
+						    xT.Size = UDim2.new(0.5,0,0.5,0)
+						    x.Active = true
+						    x.AlwaysOnTop = true
+						    x.Size = UDim2.new(3,0,3,0)
+						    xT.Text = "C4"
+						    xT.BackgroundTransparency = 1
+						    x.Name = "C4X"
+							xT.TextColor3 = Color3.new(0.333333, 0, 0)
+					end
+				end
+			end
+	
+		elseif on == true then
+			sfx:Play()
+			on = false
+			label.Text = ""
+			label.TextColor3 = Color3.fromRGB(255, 0, 0)
+	
+			for i, Item in ipairs(storage) do
+				if Item:IsA("BillboardGui") and Item.Name == "C4X" then
+					Item:Destroy()
+				end
+			end
+	
+	
+	
+		end
+	end)
+end
+coroutine.wrap(FOBY_fake_script)()
+local function PRMVHRP_fake_script() -- TextButton_15.new 
+	local script = Instance.new('LocalScript', TextButton_15)
+
+	local new = Instance.new("Sound")
+	new.SoundId = "rbxassetid://421058925"
+	new.Parent = script.Parent
+	new.Name = "Click"
+end
+coroutine.wrap(PRMVHRP_fake_script)()
+local function YJKYSUG_fake_script() -- C4.LocalScript 
+	local script = Instance.new('LocalScript', C4)
+
+	while true do
+		for i = 0,1,0.01 do
+			script.Parent.TextColor3 = Color3.fromHSV(i,1,1)
+			wait(0.1)
+		end
+	end
+end
+coroutine.wrap(YJKYSUG_fake_script)()
+local function IHIRS_fake_script() -- TextButton_16.Main 
+	local script = Instance.new('LocalScript', TextButton_16)
+
+	local Button = script.Parent
+	local label = Button:WaitForChild("TextLabel")
+	local on = false
+	local sfx = Button:WaitForChild("Click")
+	local loop = false
+	
+	Button.MouseButton1Click:Connect(function()
+		local storage = workspace.BuiltObjects:GetDescendants()
+		if on == false then
+			sfx:Play()
+			on = true
+			label.Text = "X"
+			label.TextColor3 = Color3.fromRGB(170, 0, 255)
+			loop = true
+	
+			repeat 
+				for i, Item in ipairs(storage) do
+					if Item:IsA("Model") and Item.Name == "PlasticExplosive" then
+						local x = Instance.new("BillboardGui", Item.Parent.Parent.Parent.Parent:FindFirstChildWhichIsA("BasePart"), 0.001)
+						local xT = Instance.new("TextLabel", x)
+						xT.Active = true
+						xT.Size = UDim2.new(0.5,0,0.5,0)
+						x.Active = true
+						x.AlwaysOnTop = true
+						x.Size = UDim2.new(3,0,3,0)
+						xT.Text = "Plastic"
+						xT.BackgroundTransparency = 1
+						x.Name = "PlasticX"
+						xT.TextColor3 = Color3.new(0.333333, 0, 0)
+					end
+				end
+				wait(60)
+			until loop == false
+	
+		elseif on == true then
+			sfx:Play()
+			on = false
+			label.Text = ""
+			label.TextColor3 = Color3.fromRGB(255, 0, 0)
+			loop = false
+	
+			for i, Item in ipairs(storage) do
+				if Item:IsA("BillboardGui") and Item.Name == "PlasticX" then
+					Item:Destroy()
+				end
+			end
+	
+	
+	
+		end
+	end)
+end
+coroutine.wrap(IHIRS_fake_script)()
+local function BEQUQN_fake_script() -- TextButton_16.new 
+	local script = Instance.new('LocalScript', TextButton_16)
+
+	local new = Instance.new("Sound")
+	new.SoundId = "rbxassetid://421058925"
+	new.Parent = script.Parent
+	new.Name = "Click"
+end
+coroutine.wrap(BEQUQN_fake_script)()
+local function XAWO_fake_script() -- Plastic.LocalScript 
+	local script = Instance.new('LocalScript', Plastic)
+
+	while true do
+		for i = 0,1,0.01 do
+			script.Parent.TextColor3 = Color3.fromHSV(i,1,1)
+			wait(0.1)
+		end
+	end
+end
+coroutine.wrap(XAWO_fake_script)()
+local function RDLXY_fake_script() -- TextButton_17.Main 
+	local script = Instance.new('LocalScript', TextButton_17)
+
+	local Button = script.Parent
+	local label = Button:WaitForChild("TextLabel")
+	local on = false
+	local sfx = Button:WaitForChild("Click")
+	local loop = false
+	
+	Button.MouseButton1Click:Connect(function()
+		local storage = workspace.BuiltObjects:GetDescendants()
+		if on == false then
+			sfx:Play()
+			on = true
+			label.Text = "X"
+			label.TextColor3 = Color3.fromRGB(170, 0, 255)
+			loop = true
+	
+			repeat 
+				for i, Item in ipairs(storage) do
+					if Item:IsA("Model") and Item.Name == "LargChest" or Item.Name == "SmallChest" then
+						local x = Instance.new("BillboardGui", Item:FindFirstChildWhichIsA("Part"), 0.001)
+						local xT = Instance.new("TextLabel", x)
+						xT.Active = true
+						xT.Size = UDim2.new(0.5,0,0.5,0)
+						x.Active = true
+						x.AlwaysOnTop = true
+						x.Size = UDim2.new(3,0,3,0)
+						xT.Text = (Item.Name)
+						xT.BackgroundTransparency = 1
+						x.Name = "ChestX"
+						xT.TextColor3 = Color3.new(0.333333, 0, 0)
+					end
+				end
+				wait(60)
+			until loop == false
+	
+		elseif on == true then
+			sfx:Play()
+			on = false
+			label.Text = ""
+			label.TextColor3 = Color3.fromRGB(255, 0, 0)
+			loop = false
+	
+			for i, Item in ipairs(storage) do
+				if Item:IsA("BillboardGui") and Item.Name == "ChestX" then
+					Item:Destroy()
+				end
+			end
+	
+	
+	
+		end
+	end)
+end
+coroutine.wrap(RDLXY_fake_script)()
+local function OWEF_fake_script() -- TextButton_17.new 
+	local script = Instance.new('LocalScript', TextButton_17)
+
+	local new = Instance.new("Sound")
+	new.SoundId = "rbxassetid://421058925"
+	new.Parent = script.Parent
+	new.Name = "Click"
+end
+coroutine.wrap(OWEF_fake_script)()
+local function LOKSN_fake_script() -- Storages.LocalScript 
+	local script = Instance.new('LocalScript', Storages)
+
+	while true do
+		for i = 0,1,0.01 do
+			script.Parent.TextColor3 = Color3.fromHSV(i,1,1)
+			wait(0.1)
+		end
+	end
+end
+coroutine.wrap(LOKSN_fake_script)()
+local function VGOJR_fake_script() -- TextButton_18.Main 
+	local script = Instance.new('LocalScript', TextButton_18)
+
+	local Button = script.Parent
+	local label = Button:WaitForChild("TextLabel")
+	local on = false
+	local sfx = Button:WaitForChild("Click")
+	
+	Button.MouseButton1Click:Connect(function()
+		local storage = workspace.BuiltObjects:GetDescendants()
+		if on == false then
+			sfx:Play()
+			on = true
+			label.Text = "X"
+			label.TextColor3 = Color3.fromRGB(170, 0, 255)
+			print("---------------------------------------------------------")
+	
+			for i, Item in ipairs(storage) do
+				if Item:IsA("StringValue") and Item.Name == "ItemName" then
+					if Item.Value == "ImprovisedAssaultLegArmor" or Item.Value == "ImprovisedAssaultHelmet" or Item.Value == "ImprovisedAssaultArmor" then
+						local x = Instance.new("BillboardGui", Item.Parent.Parent.Parent.Parent:FindFirstChildWhichIsA("BasePart"), 0.001)
+						local xT = Instance.new("TextLabel", x)
+						xT.Active = true
+						xT.Size = UDim2.new(0.5,0,0.5,0)
+						x.Active = true
+						x.AlwaysOnTop = true
+						x.Size = UDim2.new(3,0,3,0)
+						xT.Text = "Armor"
+						xT.BackgroundTransparency = 1
+						x.Name = "ArmorX"
+						xT.TextColor3 = Color3.new(0.333333, 0, 0)
+					end
+				end
+			end
+	
+		elseif on == true then
+			sfx:Play()
+			on = false
+			label.Text = ""
+			label.TextColor3 = Color3.fromRGB(255, 0, 0)
+	
+			for i, Item in ipairs(storage) do
+				if Item:IsA("BillboardGui") and Item.Name == "ArmorX" then
+					Item:Destroy()
+				end
+			end
+	
+	
+	
+		end
+	end)
+end
+coroutine.wrap(VGOJR_fake_script)()
+local function NOSGJ_fake_script() -- TextButton_18.new 
+	local script = Instance.new('LocalScript', TextButton_18)
+
+	local new = Instance.new("Sound")
+	new.SoundId = "rbxassetid://421058925"
+	new.Parent = script.Parent
+	new.Name = "Click"
+end
+coroutine.wrap(NOSGJ_fake_script)()
+local function NEZS_fake_script() -- Armor.LocalScript 
+	local script = Instance.new('LocalScript', Armor)
+
+	while true do
+		for i = 0,1,0.01 do
+			script.Parent.TextColor3 = Color3.fromHSV(i,1,1)
+			wait(0.1)
+		end
+	end
+end
+coroutine.wrap(NEZS_fake_script)()
+local function GODN_fake_script() -- TextButton_19.Main 
+	local script = Instance.new('LocalScript', TextButton_19)
+
+	local Button = script.Parent
+	local label = Button:WaitForChild("TextLabel")
+	local on = false
+	local sfx = Button:WaitForChild("Click")
+	
+	Button.MouseButton1Click:Connect(function()
+		local storage = workspace.BuiltObjects:GetDescendants()
+		if on == false then
+			sfx:Play()
+			on = true
+			label.Text = "X"
+			label.TextColor3 = Color3.fromRGB(170, 0, 255)
+			print("---------------------------------------------------------")
+	
+			for i, Item in ipairs(storage) do
+				if Item:IsA("StringValue") and Item.Name == "ItemName" then
+					if Item.Value == "ImprovisedM16" or Item.Value == "CustomAssaultRifle" or Item.Value == "ImprovisedRifle" then
+						local x = Instance.new("BillboardGui", Item.Parent.Parent.Parent.Parent:FindFirstChildWhichIsA("BasePart"), 0.001)
+						local xT = Instance.new("TextLabel", x)
+						xT.Active = true
+						xT.Size = UDim2.new(0.5,0,0.5,0)
+						x.Active = true
+						x.AlwaysOnTop = true
+						x.Size = UDim2.new(3,0,3,0)
+						xT.Text = "Rifle"
+						xT.BackgroundTransparency = 1
+						x.Name = "RifleX"
+						xT.TextColor3 = Color3.new(0.333333, 0, 0)
+					end
+				end
+			end
+	
+		elseif on == true then
+			sfx:Play()
+			on = false
+			label.Text = ""
+			label.TextColor3 = Color3.fromRGB(255, 0, 0)
+	
+			for i, Item in ipairs(storage) do
+				if Item:IsA("BillboardGui") and Item.Name == "RifleX" then
+					Item:Destroy()
+				end
+			end
+	
+	
+	
+		end
+	end)
+end
+coroutine.wrap(GODN_fake_script)()
+local function FQXB_fake_script() -- TextButton_19.new 
+	local script = Instance.new('LocalScript', TextButton_19)
+
+	local new = Instance.new("Sound")
+	new.SoundId = "rbxassetid://421058925"
+	new.Parent = script.Parent
+	new.Name = "Click"
+end
+coroutine.wrap(FQXB_fake_script)()
+local function NFKAP_fake_script() -- Riles.LocalScript 
+	local script = Instance.new('LocalScript', Riles)
+
+	while true do
+		for i = 0,1,0.01 do
+			script.Parent.TextColor3 = Color3.fromHSV(i,1,1)
+			wait(0.1)
+		end
+	end
+end
+coroutine.wrap(NFKAP_fake_script)()
+local function QTLBRPB_fake_script() -- TextButton_20.Main 
+	local script = Instance.new('LocalScript', TextButton_20)
+
+	local Button = script.Parent
+	local label = Button:WaitForChild("TextLabel")
+	local on = false
+	local sfx = Button:WaitForChild("Click")
+	
+	Button.MouseButton1Click:Connect(function()
+		local storage = workspace.BuiltObjects:GetDescendants()
+		if on == false then
+			sfx:Play()
+			on = true
+			label.Text = "X"
+			label.TextColor3 = Color3.fromRGB(170, 0, 255)
+			print("---------------------------------------------------------")
+	
+			for i, Item in ipairs(storage) do
+				if Item:IsA("StringValue") and Item.Name == "ItemName" then
+					if Item.Value == "DynamiteBomb" then
+						print("Found ".. (Item.Value))
+						local x = Instance.new("BillboardGui", Item.Parent.Parent.Parent.Parent:FindFirstChildWhichIsA("BasePart"), 0.001)
+						local xT = Instance.new("TextLabel", x)
+						xT.Active = true
+						xT.Size = UDim2.new(0.5,0,0.5,0)
+						x.Active = true
+						x.AlwaysOnTop = true
+						x.Size = UDim2.new(3,0,3,0)
+						xT.Text = "Dynamite"
+						xT.BackgroundTransparency = 1
+						x.Name = "DynamiteBombX"
+						xT.TextColor3 = Color3.new(0.333333, 0, 0)
+					end
+				end
+			end
+	
+		elseif on == true then
+			sfx:Play()
+			on = false
+			label.Text = ""
+			label.TextColor3 = Color3.fromRGB(255, 0, 0)
+	
+			for i, Item in ipairs(storage) do
+				if Item:IsA("BillboardGui") and Item.Name == "DynamiteBombx" then
+					Item:Destroy()
+				end
+			end
+	
+	
+	
+		end
+	end)
+end
+coroutine.wrap(QTLBRPB_fake_script)()
+local function JTPY_fake_script() -- TextButton_20.new 
+	local script = Instance.new('LocalScript', TextButton_20)
+
+	local new = Instance.new("Sound")
+	new.SoundId = "rbxassetid://421058925"
+	new.Parent = script.Parent
+	new.Name = "Click"
+end
+coroutine.wrap(JTPY_fake_script)()
+local function APPPUV_fake_script() -- Dynamite.LocalScript 
+	local script = Instance.new('LocalScript', Dynamite)
+
+	while true do
+		for i = 0,1,0.01 do
+			script.Parent.TextColor3 = Color3.fromHSV(i,1,1)
+			wait(0.1)
+		end
+	end
+end
+coroutine.wrap(APPPUV_fake_script)()
+local function MVYRTAN_fake_script() -- OptionHolder_4.LocalScript 
+	local script = Instance.new('LocalScript', OptionHolder_4)
+
+	wait(0.1)
+	
+	local dragging = false
+	local Player = game.Players.LocalPlayer
+	local Mouse = Player:GetMouse()
+	
+	local Frame = script.Parent
+	local Quar = Frame.Parent
+	
+	script.Parent.DragBegin:connect(function(pos)
+		print(pos.X.Scale, pos.X.Offset, pos.Y.Scale, pos.Y.Offset)
+		dragging = true
+	end)
+	
+	script.Parent.DragStopped:connect(function()
+		dragging = false
+	end)
+	
+	function ConvertToOffset(Pos, ParentFrame)
+		local x = Pos.X.Scale * ParentFrame.AbsoluteSize.X
+		local y = Pos.Y.Scale * ParentFrame.AbsoluteSize.Y
+		return UDim2.new(0, Pos.X.Offset + x, 0, Pos.Y.Offset + y)
+	end
+	
+	Mouse.Move:connect(function()
+		if not dragging then return end
+		local asQ = Quar.AbsoluteSize
+		local asF = Frame.AbsoluteSize
+		local pos = ConvertToOffset(Frame.Position, Quar)
+		local fixedX = math.max(0, math.min(pos.X.Offset, asQ.X - asF.X))
+		local fixedY = math.max(0, math.min(pos.Y.Offset, asQ.Y - asF.Y))
+		local fixedPos = UDim2.new(0, fixedX, 0, fixedY)
+		Frame.Position = fixedPos
+	end)
+end
+coroutine.wrap(MVYRTAN_fake_script)()
+local function DEYU_fake_script() -- ESP2.DraggableScript 
+	local script = Instance.new('LocalScript', ESP2)
+
+	--This script was created by Tiffblocks and uploaded by me :P
+	local UserInputService = game:GetService("UserInputService")
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	local function update(input)
+		local delta = input.Position - dragStart
+		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	end
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+			
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			update(input)
+		end
+	end)
+end
+coroutine.wrap(DEYU_fake_script)()
+local function AKBOW_fake_script() -- Staff.LocalScript 
+	local script = Instance.new('LocalScript', Staff)
+
+	local Players = game.Players
+	local txt = script.Parent
+	
+	while true do
+		for i, Plr in ipairs(Players:GetChildren()) do
+			if Plr.Name == "Maxikinz" or Plr.Name == "specialbereghost" or Plr.Name == "ss644" or Plr.Name == "kleinekinders" or Plr.Name == "Warden_GamingYT" or Plr.Name == "CanadianGevurat" or Plr.Name == "YouMightAswellQuit" or Plr.Name == "jhinop" or Plr.Name == "YouMightAswellQuit" or Plr.Name == "crazeysman" then
+				txt.Text = "Staff Online <-"
+			else
+				txt.Text = "No Staff <-"
+			end
+		end
+		wait(10)
+	end
+end
+coroutine.wrap(AKBOW_fake_script)()
+local function AQCUU_fake_script() -- Reaper.code 
+	local script = Instance.new('LocalScript', Reaper)
+
+	
+	local gui = script.Parent
+	local blur = Instance.new("BlurEffect", game.Lighting) blur.Size = 15 blur.Enabled = true
+	local uis = game:GetService('UserInputService')
+	
+	--InputBegan
+	uis.InputBegan:connect(function(input,process)
+		--Make sure it's not a game process
+		if not process then
+			--Check key 'E'
+			if input.KeyCode == Enum.KeyCode.X then
+				if gui.Enabled == true then
+					gui.Enabled = false
+					blur.Enabled = false
+				else
+					gui.Enabled = true
+					blur.Enabled = true
+				end
+			end
+		end
+	end)
+end
+coroutine.wrap(AQCUU_fake_script)()
